@@ -35,9 +35,13 @@ import okhttp3.Response;
 
 /**
  * 作用：okhttp:implementation("com.squareup.okhttp3:okhttp:4.7.2")
+ * 特点：适用于文本数据的上传下载，大文件的上传下载；图片不是他的强项
  * BUG：上传文件时，显示没有权限的BUG，Permission denied
  * 解决：使用API22的模拟器（Android5.1）就可以了，@#￥%……&*——
  * 更高的API会对网络(服务器)进行校验，检查是否有危险；
+ * https://github.com/square/okhttp                 (最官方，不过封装性差)
+ * https://github.com/hongyangAndroid/okhttputils   (已停止维护)
+ * https://github.com/jeasonlzy/okhttp-OkGo         (文档很详细，很新)
  */
 public class OKHttpActivity extends Activity implements View.OnClickListener {
 
