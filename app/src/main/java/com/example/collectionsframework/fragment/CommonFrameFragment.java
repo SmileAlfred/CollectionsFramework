@@ -1,5 +1,6 @@
 package com.example.collectionsframework.fragment;
 
+import android.content.Intent;
 import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
@@ -7,6 +8,7 @@ import android.widget.ListView;
 import android.widget.Toast;
 
 import com.example.collectionsframework.R;
+import com.example.collectionsframework.activity.OKHttpActivity;
 import com.example.collectionsframework.adapter.CommonFrameFragmentAdapter;
 import com.example.collectionsframework.base.BaseFragment;
 
@@ -24,7 +26,7 @@ public class CommonFrameFragment extends BaseFragment {
 
     private CommonFrameFragmentAdapter adapter;
 
-    //"CommonFrameFragment"
+    //CommonFrameFragment
     private static final String TAG = CommonFrameFragment.class.getSimpleName();
 
     @Override
@@ -35,8 +37,12 @@ public class CommonFrameFragment extends BaseFragment {
         mListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-               String data =  datas[position];
-                Toast.makeText(mContext, "data=="+data, Toast.LENGTH_SHORT).show();
+                String data =  datas[position];//okhttp
+                if(data.toLowerCase().equals("okhttp")){
+                    Intent intent = new Intent(mContext, OKHttpActivity.class);
+                    mContext.startActivity(intent);
+                }
+                //Toast.makeText(mContext, "data=="+data, Toast.LENGTH_SHORT).show();
             }
         });
         return view;

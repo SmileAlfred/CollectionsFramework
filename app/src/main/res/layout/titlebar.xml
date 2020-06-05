@@ -12,6 +12,6 @@
         android:layout_height="wrap_content"
         android:text="尚硅谷知识库"
         android:textColor="@android:color/white"
-        android:textSize="20sp" />
+        android:textSize="24sp" />
 
 </LinearLayout>
