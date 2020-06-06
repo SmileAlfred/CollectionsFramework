@@ -9,12 +9,10 @@ Android常用基础框架、技术汇总；
 
 # 二、OKHttp的使用
 1. 原生okhttp3；
-
    1. 集哈地址： http://square.github.io/okhttp/
    2. 特点和用途：联网请求文本数据、大文件下载、大文件上传、请求图片；
    3. 使用了 OKHttp 的 get/post 请求文本
 2. 封装好的OKHttp库；
-
    1. 集哈地址：https://github.com/hongyangAndroid/okhttp-utils
    2. 解决报错，导入其demo后，报错“PersistentCookieJar”相关信息：只需要在其 build.gradle文件种添加：
        
@@ -30,9 +28,28 @@ Android常用基础框架、技术汇总；
    5. 本次封装，进行缓存时，只能缓存文本数据，对于图片没有缓存；
 
 3. 另外同样优秀的封装 OkHttpUtils；
-
    1. 集哈地址：https://github.com/jeasonlzy0216/OkHttpUtils
    2. 特点：文档详细，功能更具体，现在仍在持续更新！
   
+# 三、Json解析的使用
+1. Android 原生技术
+   1. 将 json 格式的字符串 转换为 Java 对象；
+   2. 将 json 格式的字符串 转换为 Java 对象的 List；
+   3. 复杂 json 数据解析（json数据中既包含对象又包含集合）；
+   4. 特殊 json 数据解析（对于json数据中title是0的，无法用工具解析bean类，因为：*要求json对象中的key的名称与java对象对应的类中的属性名要相同*；需要手写）；
+   5. 注：原生的解析没有 Java对象→json数据 的方法；
+2. GSON 框架技术
+   1. 最新地址：https://mvnrepository.com/artifact/com.google.code.gson/gson
+   2. 将 json 格式的字符串 转换为 Java 对象；
+   3. 将 json 格式的字符串 转换为 Java 对象的 List；
+   4. 将Java对象转换为json字符串{}；
+   5. 将Java对象的List转换为json字符串[]；
+3. FastJson 框架技术
+   1. 最新地址：https://github.com/alibaba/fastjson/wiki/Quick-Start-CN
+   2. 将 json 格式的字符串 转换为 Java 对象；
+   3. 将 json 格式的字符串 转换为 Java 对象的 List；
+   4. 将Java对象转换为json字符串{}；
+   5. 将Java对象的List转换为json字符串[]；
+
 
   
