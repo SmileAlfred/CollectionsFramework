@@ -1,4 +1,4 @@
-package com.example.collectionsframework.base;
+package com.example.collectionsframework.c2okhttp.base;
 
 import android.content.Context;
 import android.os.Bundle;

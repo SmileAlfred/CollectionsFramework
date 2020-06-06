@@ -20,7 +20,10 @@
         <activity
             android:name=".MainActivity"
             android:configChanges="keyboardHidden|screenSize|orientation" />
-        <activity android:name=".activity.OKHttpActivity"/>
-        <activity android:name=".activity.OKHttpListActivity"/>
+        <activity android:name=".c2okhttp.activity.OKHttpActivity"/>
+        <activity android:name=".c2okhttp.activity.OKHttpListActivity"/>
+        <activity android:name=".c3json.activity.NativeJsonPraseActivity"/>
+        <activity android:name=".c3json.activity.GsonActivity"/>
+        <activity android:name=".c3json.activity.FastJsonActivity"/>
     </application>
 </manifest>

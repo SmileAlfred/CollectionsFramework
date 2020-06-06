@@ -1,4 +1,4 @@
-package com.example.collectionsframework.adapter;
+package com.example.collectionsframework.c2okhttp.adapter;
 
 import android.content.Context;
 import android.graphics.Bitmap;
@@ -10,7 +10,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.collectionsframework.R;
-import com.example.collectionsframework.domain.DataBean;
+import com.example.collectionsframework.c2okhttp.domain.DataBean;
 import com.zhy.http.okhttp.OkHttpUtils;
 import com.zhy.http.okhttp.callback.BitmapCallback;
 

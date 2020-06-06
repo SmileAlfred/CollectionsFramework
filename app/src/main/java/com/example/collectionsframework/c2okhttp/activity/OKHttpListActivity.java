@@ -1,4 +1,4 @@
-package com.example.collectionsframework.activity;
+package com.example.collectionsframework.c2okhttp.activity;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -11,9 +11,9 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.collectionsframework.R;
-import com.example.collectionsframework.adapter.OKHttpListAdapter;
-import com.example.collectionsframework.domain.DataBean;
-import com.example.collectionsframework.uitls.CacheUtils;
+import com.example.collectionsframework.c2okhttp.adapter.OKHttpListAdapter;
+import com.example.collectionsframework.c2okhttp.domain.DataBean;
+import com.example.collectionsframework.c2okhttp.uitls.CacheUtils;
 import com.zhy.http.okhttp.OkHttpUtils;
 import com.zhy.http.okhttp.callback.StringCallback;
 

@@ -1,4 +1,4 @@
-package com.example.collectionsframework.domain;
+package com.example.collectionsframework.c2okhttp.domain;
 
 import java.util.List;
 

@@ -1,14 +1,15 @@
-    package com.example.collectionsframework.activity;
+package com.example.collectionsframework.c2okhttp.activity;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
-import android.content.Intent;
+
 import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 import android.util.Log;
 import android.view.View;
+import android.content.Intent;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
@@ -333,10 +334,10 @@ public class OKHttpActivity extends Activity implements View.OnClickListener {
                 });
     }
 
-
     /**
      * 使用okhttp-utils上传多个或者单个文件；
      * 长传文件报错：一是报没有权限实际已经给了；二是报无法运行，解释是模拟器版本高，实际上并不高。
+     * 上传到文件，最终在：安装目录 "/webapps/FileUpload/upload"下；
      */
     public void multiFileUpload() {
         String mBaseUrl = "http://192.168.0.4:8080/FileUpload/FileUploadServlet";

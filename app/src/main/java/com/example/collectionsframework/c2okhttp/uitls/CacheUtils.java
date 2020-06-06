@@ -1,4 +1,4 @@
-package com.example.collectionsframework.uitls;
+package com.example.collectionsframework.c2okhttp.uitls;
 
 import android.content.Context;
 import android.content.SharedPreferences;

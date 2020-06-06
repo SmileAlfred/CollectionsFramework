@@ -1,4 +1,4 @@
-package com.example.collectionsframework.adapter;
+package com.example.collectionsframework.c2okhttp.adapter;
 
 import android.content.Context;
 import android.graphics.Color;

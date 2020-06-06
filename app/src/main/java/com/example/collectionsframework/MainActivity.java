@@ -7,11 +7,11 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentActivity;
 import androidx.fragment.app.FragmentTransaction;
 
-import com.example.collectionsframework.base.BaseFragment;
-import com.example.collectionsframework.fragment.CommonFrameFragment;
-import com.example.collectionsframework.fragment.CustomFragment;
-import com.example.collectionsframework.fragment.OtherFragment;
-import com.example.collectionsframework.fragment.ThirdPartyFragment;
+import com.example.collectionsframework.c2okhttp.base.BaseFragment;
+import com.example.collectionsframework.c1fragment.CommonFrameFragment;
+import com.example.collectionsframework.c1fragment.CustomFragment;
+import com.example.collectionsframework.c1fragment.OtherFragment;
+import com.example.collectionsframework.c1fragment.ThirdPartyFragment;
 
 import java.util.ArrayList;
 import java.util.List;
