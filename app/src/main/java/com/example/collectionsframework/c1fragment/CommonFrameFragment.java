@@ -13,6 +13,7 @@ import com.example.collectionsframework.c2okhttp.base.BaseFragment;
 import com.example.collectionsframework.c3json.activity.FastJsonActivity;
 import com.example.collectionsframework.c3json.activity.GsonActivity;
 import com.example.collectionsframework.c3json.activity.NativeJsonPraseActivity;
+import com.example.collectionsframework.c4xutils3.XUtils3MainActivity;
 
 /**
  * 作者：尚硅谷-杨光福 on 2016/7/21 19:27
@@ -56,6 +57,10 @@ public class CommonFrameFragment extends BaseFragment {
                     case "fastjson":
                         // 点击条目跳转到FastJson解析页面
                         intent = new Intent(mContext, FastJsonActivity.class);
+                        break;
+                    case "xutils3":
+                        intent = new Intent(mContext, XUtils3MainActivity.class);
+                        break;
                     default:
                         break;
                 }

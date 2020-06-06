@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#fff"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context="com.example.collectionsframework.c4xutils3.XUtils3MainActivity">
+
+    <!--标题栏-->
+    <include layout="@layout/titlebar" />
+
+    <Button
+        android:id="@+id/btn_annotation"
+        android:layout_width="match_parent"
+        android:background="#fff"
+        android:layout_margin="5dp"
+        android:textSize="26sp"
+        android:layout_height="wrap_content"
+        android:text="xUtils3注解模块"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btn_net"
+        android:textSize="26sp"
+        android:layout_width="match_parent"
+        android:layout_margin="5dp"
+        android:background="#fff"
+        android:layout_height="wrap_content"
+        android:text="xUtils3联网模块"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btn_image"
+        android:textSize="26sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:layout_margin="5dp"
+        android:text="xUtils3加载单张图片"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btn_image_list"
+        android:background="#fff"
+        android:layout_margin="5dp"
+        android:textSize="26sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="xUtils3加载列表图片"
+        android:textAllCaps="false" />
+
+</LinearLayout>

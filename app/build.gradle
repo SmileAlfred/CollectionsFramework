@@ -6,7 +6,7 @@ android {
 
     defaultConfig {
         applicationId "com.example.collectionsframework"
-        minSdkVersion 14
+        minSdkVersion   14
         targetSdkVersion 29
         versionCode 1
         versionName "1.0"
@@ -33,4 +33,5 @@ dependencies {
     implementation project(path: ':okhttputils')
     implementation 'com.google.code.gson:gson:2.8.6'
     implementation 'com.alibaba:fastjson:1.2.70'
+    implementation project(path: ':xutils')
 }

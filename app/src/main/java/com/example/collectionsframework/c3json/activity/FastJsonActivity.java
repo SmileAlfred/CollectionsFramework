@@ -48,24 +48,24 @@ public class FastJsonActivity extends Activity implements View.OnClickListener {
     private void initView() {
 
         // 获取标题对象
-        tv_title = (TextView)findViewById(R.id.tv_title);
+        tv_title = (TextView) findViewById(R.id.tv_title);
         tv_title.setText("FastJson解析");
 
         // 获取4个button对象
-        bt_fastjson_tojavaobject = (Button)findViewById(R.id.bt_fastjson_tojavaobject);
-        bt_fastjson_tojavalist = (Button)findViewById(R.id.bt_fastjson_tojavalist);
-        bt_fastjson_javatojsonobject = (Button)findViewById(R.id.bt_fastjson_javatojsonobject);
-        bt_fastjson_javatojsonarray = (Button)findViewById(R.id.bt_fastjson_javatojsonarray);
+        bt_fastjson_tojavaobject = (Button) findViewById(R.id.bt_fastjson_tojavaobject);
+        bt_fastjson_tojavalist = (Button) findViewById(R.id.bt_fastjson_tojavalist);
+        bt_fastjson_javatojsonobject = (Button) findViewById(R.id.bt_fastjson_javatojsonobject);
+        bt_fastjson_javatojsonarray = (Button) findViewById(R.id.bt_fastjson_javatojsonarray);
 
         // 获取显示数据的textView对象
-        tv_fastjson_orignal = (TextView)findViewById(R.id.tv_fastjson_orignal);
-        tv_fastjson_last = (TextView)findViewById(R.id.tv_fastjson_last);
+        tv_fastjson_orignal = (TextView) findViewById(R.id.tv_fastjson_orignal);
+        tv_fastjson_last = (TextView) findViewById(R.id.tv_fastjson_last);
     }
 
     @Override
     public void onClick(View v) {
 
-        switch (v.getId()){
+        switch (v.getId()) {
             // （1）将json格式的字符串{}转换为Java对象
             case R.id.bt_fastjson_tojavaobject:
                 jsonToJavaObjectByFastJson();
@@ -123,7 +123,6 @@ public class FastJsonActivity extends Activity implements View.OnClickListener {
         tv_fastjson_last.setText(json);
     }
 
-
     // （2）将json格式的字符串[]转换为Java对象的List
     private void jsonToJavaListByFastJson() {
 
@@ -143,7 +142,7 @@ public class FastJsonActivity extends Activity implements View.OnClickListener {
                 "    }\n" +
                 "]";
 
-       // 2 解析JSON数据
+        // 2 解析JSON数据
         List<ShopInfo> shopInfos = JSON.parseArray(json, ShopInfo.class);
 
         // 3 显示数据

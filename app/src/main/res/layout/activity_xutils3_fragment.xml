@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".c4xutils3.annotation.FragmentXUtils3Activity">
+
+    <!--标题栏-->
+    <include layout="@layout/titlebar" />
+
+    <FrameLayout
+        android:background="#00ffff"
+        android:id="@+id/fl_content"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:textSize="26sp"
+            android:padding="50dp"
+            android:textColor="#000"
+            android:gravity="center"
+            android:text="FragmentXUtils3Activity中\n等待被 xUtils 切换"
+            android:layout_gravity="center"/>
+
+    </FrameLayout>
+    <Button
+        android:id="@+id/btn_switch_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="切换Fragment"
+        android:background="#fff"
+        android:textSize="24sp"/>
+</LinearLayout>
