@@ -50,6 +50,36 @@ Android常用基础框架、技术汇总；
    3. 将 json 格式的字符串 转换为 Java 对象的 List；
    4. 将Java对象转换为json字符串{}；
    5. 将Java对象的List转换为json字符串[]；
+# 四、xUitls3-注解&联网模块
+1. 功能：
+   1. 注解：在 Activity 或 Fragment 中初始化布局文件、点击事件、替换Fragment ；
+   2. 联网模块：支持get/post请求、超过2G大文件上传下载；
+   3. 加载图片，并支持圆角、方形剪裁；
+   4. 数据库模块；
+2.注解模块
+   1. 通过导入module进行依赖，而非jar包；最新地址：https://github.com/wyouflf/xUtils3；
+   2. 这里需要配置相应的 application（拷贝使用即可）；
+   3. 代码显示
+   ```
+   @ContentView(R.layout.activity_xutils3) 
+   public class XUtils3Activity extends Activity {
+      @ViewInject(R.id.tv_title) 
+      private TextView tv_title;
+      @Override 
+      protected void onCreate(Bundle savedInstanceState) { super.onCreate(savedInstanceState); 
+         x.view().inject(this);
+	}
+	@Event(value = {R.id.btn_annotation,R.id.btn_net,R.id.btn_image,R.id.btn_database}) 
+	private void getEnvent(View view){
+   ```
+   4. Fragment 中使用注解初始化布局
+   ```
+   //在 onCreateView() 方法中写
+   return x.view().inject(this, inflater, container);
+   ```
 
+3. 联网模块
+   1. Get / POST 请求文本；
+   2. 文件下载&断点续传；```params.setAutoResume(true);```
 
   
