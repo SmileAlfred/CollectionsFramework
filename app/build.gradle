@@ -35,4 +35,5 @@ dependencies {
     implementation 'com.alibaba:fastjson:1.2.70'
     implementation project(path: ':xutils')
     implementation files('libs/afinal_0.5.1_bin.jar')
+    implementation files('libs/eventbus-3.2.0.jar')
 }

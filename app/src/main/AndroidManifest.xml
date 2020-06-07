@@ -32,5 +32,7 @@
         <activity android:name=".c4xutils3.net.XUtils3NetActivity" />
         <activity android:name=".c5afinal.AfinalActivity" />
         <activity android:name=".c6volley.VolleyActivity"/>
+        <activity android:name=".c7eventbus.EventBusActivity"/>
+        <activity android:name=".c7eventbus.EventBusSendActivity"/>
     </application>
 </manifest>

@@ -16,6 +16,7 @@ import com.example.collectionsframework.c3json.activity.NativeJsonPraseActivity;
 import com.example.collectionsframework.c4xutils3.XUtils3MainActivity;
 import com.example.collectionsframework.c5afinal.AfinalActivity;
 import com.example.collectionsframework.c6volley.VolleyActivity;
+import com.example.collectionsframework.c7eventbus.EventBusActivity;
 
 import net.tsz.afinal.exception.AfinalException;
 
@@ -71,6 +72,9 @@ public class CommonFrameFragment extends BaseFragment {
                     case "volley":
                         intent = new Intent(mContext, VolleyActivity.class);
                         break;
+                    case "eventbus":
+                        intent = new Intent(mContext, EventBusActivity.class);
+                        break;
                     default:
                         break;
                 }
@@ -86,8 +90,8 @@ public class CommonFrameFragment extends BaseFragment {
         Log.e(TAG, "常用框架Fragment数据被初始化了...");
         //准备数据
         datas = new String[]{"OKHttp", "nativeJsonPrase", "Gson", "FastJson", "xUtils3" , "Afinal"
-                , "Volley", "Retrofit2", "Fresco", "Glide", "greenDao", "RxJava", "picasso"
-                , "evenBus", "jcvideoplayer", "pulltorefresh", "Expandablelistview"
+                , "Volley", "EventBus", "Retrofit2", "Fresco", "Glide", "greenDao", "RxJava", "picasso"
+                , "jcvideoplayer", "pulltorefresh", "Expandablelistview"
                 , "UniversalVideoView", "....."};
         //设置适配器
         adapter = new CommonFrameFragmentAdapter(mContext, datas);
