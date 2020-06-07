@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical">
+
+    <include layout="@layout/titlebar"></include>
+
+    <TextView
+        android:id="@+id/tv_butterknife"
+        android:layout_width="match_parent"
+        android:background="#fff"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="textview"
+        android:textSize="24sp" />
+
+    <CheckBox
+        android:id="@+id/cb_butterknife"
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="checkbox"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/bt_butterknife"
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="button"
+        android:textSize="24sp" />
+
+</LinearLayout>

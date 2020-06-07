@@ -34,5 +34,6 @@
         <activity android:name=".c6volley.VolleyActivity"/>
         <activity android:name=".c7eventbus.EventBusActivity"/>
         <activity android:name=".c7eventbus.EventBusSendActivity"/>
+        <activity android:name=".c8butterknife.ButterknifeActivity"/>
     </application>
 </manifest>
