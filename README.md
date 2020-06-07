@@ -82,5 +82,8 @@ Android常用基础框架、技术汇总；
 3. 联网模块
    1. Get / POST 请求文本；
    2. 文件下载&断点续传；```params.setAutoResume(true);```
-
+# 五、Afinal框架
+1. 作为xUtils3的前身，他已经在2015就停止维护了；
+2. 导入jar包afinal_0.5.1_bin.jar使用；
+3. 同样的加载图片、请求json数据、文件上传下载；
   
