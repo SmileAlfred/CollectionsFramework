@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/titlebar"></include>
+
+    <Button
+        android:id="@+id/bt_afinal_loadimage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Afinal加载图片" />
+
+    <Button
+        android:id="@+id/bt_afinal_gettext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Afinal文本请求" />
+
+    <Button
+        android:id="@+id/bt_afinal_loadfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Afinal文件下载" />
+
+    <Button
+        android:id="@+id/bt_afinal_updatetext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Afinal文件上传" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="显示结果"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/iv_afinal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:id="@+id/tv_afinal_result"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </ScrollView>
+
+</LinearLayout>
