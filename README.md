@@ -91,7 +91,7 @@ Android常用基础框架、技术汇总；
   
 # 六、Volley
 1. 通过jar依赖使用；并没有找到最新的jar；
-2.  非常适合进行数据量不大，但通信频繁的网络操作；对于大数据量的网络操作，比如下载文件等，Volley的表现不好；
+2. 非常适合进行数据量不大，但通信频繁的网络操作；对于大数据量的网络操作，比如下载文件等，Volley的表现不好；
 3. 实现网络请求（Get / Post / Json）和图片加载；
 
 # 七、EventBus
@@ -104,9 +104,16 @@ Android常用基础框架、技术汇总；
    4. 发送消息：```EventBus.getDefault().post(new MessageEvent("主线程发送过来的数据"));```
    5. 接收消息;
    ```
-   	@Subscribe(threadMode = ThreadMode.MAIN)
-   	 public void MesssageEventBus(MessageEvent event) {
+   @Subscribe(threadMode = ThreadMode.MAIN)
+   public void MesssageEventBus(MessageEvent event) {
     ```
 4. 注意：粘性事件的顺序：3 - 4 - 5 - 1 - 2
 
-# 八、
+# 八、ButterKnife
+1. 最新地址：https://github.com/JakeWharton/butterknife
+2. 越用越顺手，不过第一次使用时，配置比较麻烦；
+3. 功能：
+   1. 省略findViewById()；在activity、fragment、holder中使用；
+   2. 省略setOnClickListener()；
+   3. ListView的点击@OnItemClick, CheckBox的@OnCheckedChanged也可以实现省略操作；
+   4. 一次指定多个id,为多个View绑定一个事件处理方法；
