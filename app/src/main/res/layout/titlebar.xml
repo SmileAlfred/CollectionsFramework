@@ -11,7 +11,7 @@
         android:id="@+id/tv_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="尚硅谷知识库"
+        android:text="Android知识库"
         android:textColor="@android:color/white"
         android:textSize="28sp" />
 

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical">
+
+    <include layout="@layout/titlebar"></include>
+
+    <Button
+        android:id="@+id/bt_volley_get"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:text="get请求"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/bt_volley_post"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:text="post请求"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/bt_volley_getjson"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:text="请求JSON数据"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/bt_volley_imagerequest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:text="ImageRequest加载图片"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/bt_volley_imageloader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:text="ImageLoader加载图片"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/bt_volley_networkimageview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:text="NetWorkImageView加载图片"
+        android:textSize="24sp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:layout_margin="5dp"
+                android:layout_gravity="center"
+                android:text="显示结果"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/iv_volley_result"
+                android:layout_width="200dp"
+                android:layout_margin="5dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:visibility="gone" />
+
+            <com.android.volley.toolbox.NetworkImageView
+                android:id="@+id/iv_volley_networkimagview"
+                android:layout_width="200dp"
+                android:layout_margin="5dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center_horizontal"
+                android:visibility="gone">
+
+            </com.android.volley.toolbox.NetworkImageView>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/tv_volley_result"
+                    android:layout_width="match_parent"
+                    android:layout_margin="5dp"
+                    android:layout_height="match_parent" />
+            </ScrollView>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

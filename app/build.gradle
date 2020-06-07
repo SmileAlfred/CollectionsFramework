@@ -34,4 +34,5 @@ dependencies {
     implementation 'com.google.code.gson:gson:2.8.6'
     implementation 'com.alibaba:fastjson:1.2.70'
     implementation project(path: ':xutils')
+    implementation files('libs/afinal_0.5.1_bin.jar')
 }

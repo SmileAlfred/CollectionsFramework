@@ -19,6 +19,7 @@ import org.xutils.x;
 /**
  * 初始布局和view页面；这里需要一个全局的 application
  * 代替 setContentView(R.layout.activity_xutils3_main);
+ * PS：这里请求单张和多张图片未实现
  */
 @ContentView(R.layout.activity_xutils3_main)
 public class XUtils3MainActivity extends Activity {
@@ -52,10 +53,10 @@ public class XUtils3MainActivity extends Activity {
                 intent = new Intent(XUtils3MainActivity.this, XUtils3NetActivity.class);
                 break;
             case R.id.btn_image:
-                Toast.makeText(XUtils3MainActivity.this, "加载单张图片被点击了", Toast.LENGTH_SHORT).show();
+                Toast.makeText(XUtils3MainActivity.this, "加载单张图片未实现", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.btn_image_list:
-                Toast.makeText(XUtils3MainActivity.this, "加载列表图片被点击了", Toast.LENGTH_SHORT).show();
+                Toast.makeText(XUtils3MainActivity.this, "加载列表图片未实现", Toast.LENGTH_SHORT).show();
                 break;
             default:
                 break;

@@ -8,17 +8,32 @@
 
     <ImageView
         android:id="@+id/iv_icon"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:src="@drawable/atguigu_logo" />
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_above="@+id/slogan"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/i_logo" />
 
     <TextView
-        android:textColor="@android:color/black"
-        android:textSize="20sp"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@id/iv_icon"
-        android:text="尚硅谷Android世界..."
+        android:id="@+id/slogan"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Android框架汇总"
+        android:textColor="@android:color/black"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="资源来自于：尚硅谷"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="12sp" />
+
 </RelativeLayout>

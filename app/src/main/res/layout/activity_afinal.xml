@@ -2,6 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="#fff"
     android:layout_height="match_parent"
     android:orientation="vertical">
 
@@ -11,37 +12,51 @@
         android:id="@+id/bt_afinal_loadimage"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Afinal加载图片" />
+        android:layout_margin="5dp"
+        android:background="#fff"
+        android:text="Afinal加载图片"
+        android:textSize="22sp" />
 
     <Button
         android:id="@+id/bt_afinal_gettext"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Afinal文本请求" />
+        android:layout_margin="5dp"
+        android:background="#fff"
+        android:text="Afinal文本请求"
+        android:textSize="22sp" />
 
     <Button
         android:id="@+id/bt_afinal_loadfile"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Afinal文件下载" />
+        android:layout_margin="5dp"
+        android:background="#fff"
+        android:text="Afinal文件下载"
+        android:textSize="22sp" />
 
     <Button
         android:id="@+id/bt_afinal_updatetext"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Afinal文件上传" />
+        android:layout_margin="5dp"
+        android:background="#fff"
+        android:text="Afinal文件上传"
+        android:textSize="22sp" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
+        android:background="#fff"
         android:text="显示结果"
         android:textSize="20sp" />
 
     <ImageView
         android:id="@+id/iv_afinal"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" />
 
     <ScrollView
         android:layout_width="match_parent"

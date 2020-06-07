@@ -1,8 +1,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.collectionsframework">
-    <uses-permission android:name="android.permission.INTERNET"/>
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
         android:name=".MyApplication"
@@ -21,13 +22,15 @@
         <activity
             android:name=".MainActivity"
             android:configChanges="keyboardHidden|screenSize|orientation" />
-        <activity android:name=".c2okhttp.activity.OKHttpActivity"/>
-        <activity android:name=".c2okhttp.activity.OKHttpListActivity"/>
-        <activity android:name=".c3json.activity.NativeJsonPraseActivity"/>
-        <activity android:name=".c3json.activity.GsonActivity"/>
-        <activity android:name=".c3json.activity.FastJsonActivity"/>
-        <activity android:name=".c4xutils3.annotation.FragmentXUtils3Activity"/>
-        <activity android:name=".c4xutils3.XUtils3MainActivity"/>
-        <activity android:name=".c4xutils3.net.XUtils3NetActivity"/>
+        <activity android:name=".c2okhttp.activity.OKHttpActivity" />
+        <activity android:name=".c2okhttp.activity.OKHttpListActivity" />
+        <activity android:name=".c3json.activity.NativeJsonPraseActivity" />
+        <activity android:name=".c3json.activity.GsonActivity" />
+        <activity android:name=".c3json.activity.FastJsonActivity" />
+        <activity android:name=".c4xutils3.annotation.FragmentXUtils3Activity" />
+        <activity android:name=".c4xutils3.XUtils3MainActivity" />
+        <activity android:name=".c4xutils3.net.XUtils3NetActivity" />
+        <activity android:name=".c5afinal.AfinalActivity" />
+        <activity android:name=".c6volley.VolleyActivity"/>
     </application>
 </manifest>

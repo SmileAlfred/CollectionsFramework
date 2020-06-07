@@ -14,6 +14,10 @@ import com.example.collectionsframework.c3json.activity.FastJsonActivity;
 import com.example.collectionsframework.c3json.activity.GsonActivity;
 import com.example.collectionsframework.c3json.activity.NativeJsonPraseActivity;
 import com.example.collectionsframework.c4xutils3.XUtils3MainActivity;
+import com.example.collectionsframework.c5afinal.AfinalActivity;
+import com.example.collectionsframework.c6volley.VolleyActivity;
+
+import net.tsz.afinal.exception.AfinalException;
 
 /**
  * 作者：尚硅谷-杨光福 on 2016/7/21 19:27
@@ -61,6 +65,12 @@ public class CommonFrameFragment extends BaseFragment {
                     case "xutils3":
                         intent = new Intent(mContext, XUtils3MainActivity.class);
                         break;
+                    case "afinal":
+                        intent = new Intent(mContext, AfinalActivity.class);
+                        break;
+                    case "volley":
+                        intent = new Intent(mContext, VolleyActivity.class);
+                        break;
                     default:
                         break;
                 }
@@ -75,7 +85,10 @@ public class CommonFrameFragment extends BaseFragment {
         super.initData();
         Log.e(TAG, "常用框架Fragment数据被初始化了...");
         //准备数据
-        datas = new String[]{"OKHttp", "nativeJsonPrase", "Gson", "FastJson", "xUtils3", "Retrofit2", "Fresco", "Glide", "greenDao", "RxJava", "volley", "picasso", "evenBus", "jcvideoplayer", "pulltorefresh", "Expandablelistview", "UniversalVideoView", "....."};
+        datas = new String[]{"OKHttp", "nativeJsonPrase", "Gson", "FastJson", "xUtils3" , "Afinal"
+                , "Volley", "Retrofit2", "Fresco", "Glide", "greenDao", "RxJava", "picasso"
+                , "evenBus", "jcvideoplayer", "pulltorefresh", "Expandablelistview"
+                , "UniversalVideoView", "....."};
         //设置适配器
         adapter = new CommonFrameFragmentAdapter(mContext, datas);
         mListView.setAdapter(adapter);

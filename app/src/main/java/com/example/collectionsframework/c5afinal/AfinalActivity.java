@@ -1,4 +1,4 @@
-package com.atguigu.android.afinal;
+package com.example.collectionsframework.c5afinal;
 
 import android.os.Bundle;
 import android.view.View;
@@ -6,7 +6,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.atguigu.android.R;
+import com.example.collectionsframework.R;
 
 import net.tsz.afinal.FinalActivity;
 import net.tsz.afinal.FinalBitmap;
@@ -18,8 +18,9 @@ import net.tsz.afinal.http.AjaxParams;
 import java.io.File;
 import java.io.FileNotFoundException;
 
-
-// Afinal框架讲解
+/**
+ * Afinal框架：早在2015年就停止维护了，是xUtils3的前身，了解；可以用xUtils3代替
+ */
 public class AfinalActivity extends FinalActivity {
 
     @ViewInject(id=R.id.bt_afinal_loadimage,click = "bt_afinal_loadimage_click")
@@ -61,10 +62,10 @@ public class AfinalActivity extends FinalActivity {
         FinalBitmap finalBitmap = FinalBitmap.create(this);
 
         // 网络请求图片时默认显示的图片
-        finalBitmap.configLoadingImage(R.drawable.atguigu_logo);
+        finalBitmap.configLoadingImage(R.drawable.i_logo);
 
         // 开始加载图片
-        finalBitmap.display(iv_afinal,"http://img5.mtime.cn/mg/2016/10/11/160347.30270341.jpg");
+        finalBitmap.display(iv_afinal,"https://profile.csdnimg.cn/B/8/7/3_liusaisaiv1");
     }
 
     // 请求文本的点击事件处理
@@ -131,7 +132,7 @@ public class AfinalActivity extends FinalActivity {
         FinalHttp finalHttp = new FinalHttp();
 
         // 文件上传到服务器的位置
-        String url  = "http://192.168.0.103:8080/FileUpload/FileUploadServlet";
+        String url  = "http://192.168.0.3:8080/FileUpload/FileUploadServlet";
 
         AjaxParams params = new AjaxParams();
         // 获取要上传的本地资源
