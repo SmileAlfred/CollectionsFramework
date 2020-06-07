@@ -93,3 +93,20 @@ Android常用基础框架、技术汇总；
 1. 通过jar依赖使用；并没有找到最新的jar；
 2.  非常适合进行数据量不大，但通信频繁的网络操作；对于大数据量的网络操作，比如下载文件等，Volley的表现不好；
 3. 实现网络请求（Get / Post / Json）和图片加载；
+
+# 七、EventBus
+1. 通过jar包依赖；最新地址：https://github.com/greenrobot/EventBus；
+2. 问题：对使用情景不了解，暂时做不到灵活使用；
+3. 步骤：
+   1. 注册广播：``EventBus.getDefault().register(EventBusActivity.this);```
+   2. 解注册：```EventBus.getDefault().unregister(EventBusActivity.this);```
+   3. 创建发送消息类；
+   4. 发送消息：```EventBus.getDefault().post(new MessageEvent("主线程发送过来的数据"));```
+   5. 接收消息;
+   ```
+   	@Subscribe(threadMode = ThreadMode.MAIN)
+   	 public void MesssageEventBus(MessageEvent event) {
+    ```
+4. 注意：粘性事件的顺序：3 - 4 - 5 - 1 - 2
+
+# 八、
