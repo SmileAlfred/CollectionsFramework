@@ -50,6 +50,7 @@ Android常用基础框架、技术汇总；
    3. 将 json 格式的字符串 转换为 Java 对象的 List；
    4. 将Java对象转换为json字符串{}；
    5. 将Java对象的List转换为json字符串[]；
+   
 # 四、xUitls3-注解&联网模块
 1. 功能：
    1. 注解：在 Activity 或 Fragment 中初始化布局文件、点击事件、替换Fragment ；
@@ -82,8 +83,13 @@ Android常用基础框架、技术汇总；
 3. 联网模块
    1. Get / POST 请求文本；
    2. 文件下载&断点续传；```params.setAutoResume(true);```
+   
 # 五、Afinal框架
 1. 作为xUtils3的前身，他已经在2015就停止维护了；
 2. 导入jar包afinal_0.5.1_bin.jar使用；
 3. 同样的加载图片、请求json数据、文件上传下载；
   
+# 六、Volley
+1. 通过jar依赖使用；并没有找到最新的jar；
+2.  非常适合进行数据量不大，但通信频繁的网络操作；对于大数据量的网络操作，比如下载文件等，Volley的表现不好；
+3. 实现网络请求（Get / Post / Json）和图片加载；
