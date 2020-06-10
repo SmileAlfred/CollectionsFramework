@@ -8,6 +8,7 @@ import android.widget.ListView;
 
 import com.example.collectionsframework.R;
 import com.example.collectionsframework.c10picasso.activity.PicassoActivity;
+import com.example.collectionsframework.c11recyclerview.RecyclerViewActivity;
 import com.example.collectionsframework.c2okhttp.activity.OKHttpActivity;
 import com.example.collectionsframework.c2okhttp.adapter.CommonFrameFragmentAdapter;
 import com.example.collectionsframework.c2okhttp.base.BaseFragment;
@@ -22,9 +23,6 @@ import com.example.collectionsframework.c8butterknife.ButterknifeActivity;
 import com.example.collectionsframework.c9imageloader.acitvity.ImageLoaderActivity;
 
 /**
- * 作者：尚硅谷-杨光福 on 2016/7/21 19:27
- * 微信：yangguangfu520
- * QQ号：541433511
  * 作用：常用框架Fragment
  */
 public class CommonFrameFragment extends BaseFragment {
@@ -85,6 +83,9 @@ public class CommonFrameFragment extends BaseFragment {
                     case "picasso":
                         intent = new Intent(mContext, PicassoActivity.class);
                         break;
+                    case "recyclerview":
+                        intent = new Intent(mContext, RecyclerViewActivity.class);
+                        break;
                     default:
                         break;
                 }
@@ -99,8 +100,9 @@ public class CommonFrameFragment extends BaseFragment {
         super.initData();
         Log.e(TAG, "常用框架Fragment数据被初始化了...");
         //准备数据
-        datas = new String[]{"OKHttp", "nativeJsonPrase", "Gson", "FastJson", "xUtils3" , "Afinal"
-                , "Volley", "EventBus", "ButterKnife","ImageLoader","Picasso","Retrofit2", "Fresco", "Glide", "greenDao", "RxJava", "picasso"
+        datas = new String[]{"OKHttp", "NativeJsonPrase", "Gson", "FastJson", "xUtils3"
+                , "Afinal", "Volley", "EventBus", "ButterKnife", "ImageLoader", "Picasso"
+                , "RecyclerView", "Retrofit2", "Fresco", "Glide", "greenDao", "RxJava"
                 , "jcvideoplayer", "pulltorefresh", "Expandablelistview"
                 , "UniversalVideoView", "....."};
         //设置适配器
