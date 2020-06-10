@@ -45,4 +45,6 @@ dependencies {
     implementation files('libs/eventbus-3.2.0.jar')
     implementation 'com.jakewharton:butterknife:10.2.1'
     annotationProcessor 'com.jakewharton:butterknife-compiler:10.2.1'
+    //对于 image-loader 的使用，要么就如下方式要么就引用jar包，二选一；
+    implementation 'com.nostra13.universalimageloader:universal-image-loader:1.9.5'
 }

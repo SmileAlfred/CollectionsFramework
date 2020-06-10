@@ -35,5 +35,10 @@
         <activity android:name=".c7eventbus.EventBusActivity"/>
         <activity android:name=".c7eventbus.EventBusSendActivity"/>
         <activity android:name=".c8butterknife.ButterknifeActivity"/>
+        <activity android:name=".c9imageloader.acitvity.ImageLoaderActivity"/>
+        <activity android:name=".c9imageloader.acitvity.ImageloaderGridviewActivity"/>
+        <activity android:name=".c9imageloader.acitvity.ImageloaderListviewActivity"/>
+        <activity android:name=".c9imageloader.acitvity.ImageloaderViewpagerActivity"/>
+
     </application>
 </manifest>

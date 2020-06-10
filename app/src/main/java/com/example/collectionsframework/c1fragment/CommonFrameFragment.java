@@ -18,6 +18,7 @@ import com.example.collectionsframework.c5afinal.AfinalActivity;
 import com.example.collectionsframework.c6volley.VolleyActivity;
 import com.example.collectionsframework.c7eventbus.EventBusActivity;
 import com.example.collectionsframework.c8butterknife.ButterknifeActivity;
+import com.example.collectionsframework.c9imageloader.acitvity.ImageLoaderActivity;
 
 import net.tsz.afinal.exception.AfinalException;
 
@@ -79,6 +80,9 @@ public class CommonFrameFragment extends BaseFragment {
                     case "butterknife":
                         intent = new Intent(mContext, ButterknifeActivity.class);
                         break;
+                    case "imageloader":
+                        intent = new Intent(mContext, ImageLoaderActivity.class);
+                        break;
                     default:
                         break;
                 }
@@ -94,7 +98,7 @@ public class CommonFrameFragment extends BaseFragment {
         Log.e(TAG, "常用框架Fragment数据被初始化了...");
         //准备数据
         datas = new String[]{"OKHttp", "nativeJsonPrase", "Gson", "FastJson", "xUtils3" , "Afinal"
-                , "Volley", "EventBus", "ButterKnife","Retrofit2", "Fresco", "Glide", "greenDao", "RxJava", "picasso"
+                , "Volley", "EventBus", "ButterKnife","ImageLoader","Retrofit2", "Fresco", "Glide", "greenDao", "RxJava", "picasso"
                 , "jcvideoplayer", "pulltorefresh", "Expandablelistview"
                 , "UniversalVideoView", "....."};
         //设置适配器
