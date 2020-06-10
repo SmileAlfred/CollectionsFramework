@@ -7,6 +7,7 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentActivity;
 import androidx.fragment.app.FragmentTransaction;
 
+import com.example.collectionsframework.c1fragment.flowCommonFrameFragment;
 import com.example.collectionsframework.c2okhttp.base.BaseFragment;
 import com.example.collectionsframework.c1fragment.CommonFrameFragment;
 import com.example.collectionsframework.c1fragment.CustomFragment;
@@ -142,7 +143,8 @@ public class MainActivity extends FragmentActivity {
     private void initFragment() {
         mBaseFragment = new ArrayList<>();
         //常用框架Fragment
-        mBaseFragment.add(new CommonFrameFragment());
+        //mBaseFragment.add(new CommonFrameFragment());
+        mBaseFragment.add(new flowCommonFrameFragment());
         //第三方Fragment
         mBaseFragment.add(new ThirdPartyFragment());
         //自定义控件Fragment

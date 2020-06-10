@@ -27,7 +27,13 @@ public abstract class BaseFragment extends Fragment {
         mContext = getActivity();
     }
 
-
+    /**
+     * 先 onCreateView 后 onActivityCreated
+     * @param inflater
+     * @param container
+     * @param savedInstanceState
+     * @return
+     */
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {

@@ -11,7 +11,8 @@
         android:id="@+id/bt_gson_tojavaobject"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="5dp"
+        android:layout_margin="3dp"
+        android:background="#fff"
         android:text="将JSON对象转换为Java对象"
         android:textSize="18sp" />
 
@@ -19,7 +20,8 @@
         android:id="@+id/bt_gson_tojavalist"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="5dp"
+        android:layout_margin="3dp"
+        android:background="#fff"
         android:text="将JSON数组转换为Java集合"
         android:textSize="18sp" />
 
@@ -27,7 +29,8 @@
         android:id="@+id/bt_gson_javatojsonobject"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="5dp"
+        android:layout_margin="3dp"
+        android:background="#fff"
         android:text="将java对象转换为JSON对象"
         android:textSize="18sp" />
 
@@ -35,14 +38,16 @@
         android:id="@+id/bt_gson_javatojsonarray"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="5dp"
+        android:layout_margin="3dp"
+        android:background="#fff"
         android:text="将java集合转换为JSON数组"
         android:textSize="18sp" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="5dp"
+        android:layout_margin="3dp"
+        android:background="#fff"
         android:text="原始数据"
         android:textColor="@android:color/holo_blue_light"
         android:textSize="18sp" />
