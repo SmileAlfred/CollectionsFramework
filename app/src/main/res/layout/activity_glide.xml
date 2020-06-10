@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_glide"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/titlebar"></include>
+
+    <Button
+        android:text="基本方法的使用"
+        android:id="@+id/bt_glide_base"
+        android:background="#fff"
+        android:textSize="24sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:text="RecyclerView中加载图片"
+        android:background="#fff"
+        android:textSize="24sp"
+        android:id="@+id/bt_glide_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:text="图片变换"
+        android:textSize="24sp"
+        android:background="#fff"
+        android:id="@+id/bt_glide_tranfromations"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

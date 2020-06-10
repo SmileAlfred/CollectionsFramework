@@ -44,5 +44,9 @@
         <activity android:name=".c10picasso.activity.PicassoTransfromationsActivity" />
         <activity android:name=".c11recyclerview.RecyclerViewActivity"
             android:theme="@style/listDividerTheme"/>
+        <activity android:name=".c12glide.activity.GlideActivity"/>
+        <activity android:name=".c12glide.activity.GlideBaseActivity"/>
+        <activity android:name=".c12glide.activity.GlideRecyclerviewActivity"/>
+        <activity android:name=".c12glide.activity.GlideTranformationsActivity"/>
     </application>
 </manifest>

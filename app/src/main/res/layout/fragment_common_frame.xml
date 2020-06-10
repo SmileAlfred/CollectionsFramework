@@ -1,11 +1,149 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:padding="20dp"
+    android:orientation="vertical">
 
-    <ListView
-        android:id="@+id/listview"
+    <com.example.collectionsframework.FlowLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="wrap_content"
+        android:background="#fff">
 
-</RelativeLayout>
+        <TextView
+            android:id="@+id/item1"
+            style="@style/common_text" />
+
+        <TextView
+            android:id="@+id/item2"
+            style="@style/common_text" />
+
+        <TextView
+            android:id="@+id/item3"
+            style="@style/common_text" />
+
+        <TextView
+            android:id="@+id/item4"
+            style="@style/common_text" />
+
+        <TextView
+            android:id="@+id/item5"
+            style="@style/common_text" />
+
+        <TextView
+            android:id="@+id/item6"
+            style="@style/common_text" />
+
+        <TextView
+            android:id="@+id/item7"
+            style="@style/common_text" />
+
+        <TextView
+            android:id="@+id/item8"
+            style="@style/common_text" />
+
+
+        <TextView
+            android:id="@+id/item9"
+            style="@style/common_text" />
+
+        <TextView
+            android:id="@+id/item10"
+            style="@style/common_text" />
+
+        <TextView
+            android:id="@+id/item11"
+            style="@style/common_text" />
+
+        <TextView
+            android:id="@+id/item12"
+            style="@style/common_text" />
+
+        <TextView
+            android:id="@+id/item13"
+            style="@style/common_text" />
+
+        <TextView
+            android:id="@+id/item14"
+            style="@style/common_text" />
+
+        <TextView
+            android:id="@+id/item15"
+            style="@style/common_text" />
+
+        <TextView
+            android:id="@+id/item16"
+            style="@style/common_text" />
+
+        <TextView
+            android:id="@+id/item17"
+            style="@style/common_text" />
+
+        <TextView
+            android:id="@+id/item18"
+            style="@style/common_text" />
+
+        <TextView
+            android:id="@+id/item19"
+            style="@style/common_text" />
+
+        <TextView
+            android:id="@+id/item20"
+            style="@style/common_text" />
+
+        <TextView
+            android:id="@+id/item21"
+            style="@style/common_text" />
+
+        <TextView
+            android:id="@+id/item22"
+            style="@style/common_text" />
+
+        <TextView
+            android:id="@+id/item23"
+            style="@style/common_text" />
+
+        <TextView
+            android:id="@+id/item24"
+            style="@style/common_text" />
+
+        <TextView
+            android:id="@+id/item25"
+            style="@style/common_text" />
+
+        <TextView
+            android:id="@+id/item26"
+            style="@style/common_text" />
+
+        <TextView
+            android:id="@+id/item27"
+            style="@style/common_text" />
+
+        <TextView
+            android:id="@+id/item28"
+            style="@style/common_text" />
+
+        <TextView
+            android:id="@+id/item29"
+            style="@style/common_text" />
+
+        <TextView
+            android:id="@+id/item30"
+            style="@style/common_text" />
+    </com.example.collectionsframework.FlowLayout>
+
+</LinearLayout>
+
+
+    <!--<?xml version="1.0" encoding="utf-8"?>-->
+    <!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--    android:layout_width="match_parent"-->
+    <!--    android:layout_height="match_parent">-->
+
+    <!--    <ListView-->
+    <!--        android:id="@+id/listview"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent" />-->
+
+    <!--</RelativeLayout>-->
