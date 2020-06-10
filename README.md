@@ -138,10 +138,16 @@ repositories {
 4. 图片裁剪；``` .resizeDimen(width,height)  ```
 5. 存在36种变换；包括，黑白化、肖像化、模糊化，马赛克化等等；
 
+# 十一、RecyclerView
+1. 注意：如何设置适配器；
+2. 注意：如何设置其item的点击事件？
+3. 注意：如何设置其添加、删除动画？
+4. 详细使用见博客：https://blog.csdn.net/liusaisaiV1/article/details/106038665
 
-
-
-
+# 十二、Glide（有BUG）
+1. 可加载图片、动图、本地等资源；地址：https://github.com/bumptech/glide
+2. 变化比较大，最新的API值得总结和学习；
+3. 对于Glide的变换；出现BUG，一定要看最新的文档，因为很多方法都废弃了；
 
 
 
