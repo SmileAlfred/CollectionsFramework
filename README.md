@@ -138,7 +138,11 @@ repositories {
 4. 图片裁剪；``` .resizeDimen(width,height)  ```
 5. 存在36种变换；包括，黑白化、肖像化、模糊化，马赛克化等等；
 
-
+# 十一、RecyclerView
+1. 注意：如何设置适配器；
+2. 注意：如何设置其item的点击事件？
+3. 注意：如何设置其添加、删除动画？
+4. 详细使用见博客：https://blog.csdn.net/liusaisaiV1/article/details/106038665
 
 
 
