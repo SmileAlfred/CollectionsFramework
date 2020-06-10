@@ -39,6 +39,9 @@
         <activity android:name=".c9imageloader.acitvity.ImageloaderGridviewActivity"/>
         <activity android:name=".c9imageloader.acitvity.ImageloaderListviewActivity"/>
         <activity android:name=".c9imageloader.acitvity.ImageloaderViewpagerActivity"/>
+        <activity android:name=".c10picasso.activity.PicassoActivity"/>
+        <activity android:name=".c10picasso.activity.PicassoListviewActivity"/>
+        <activity android:name=".c10picasso.activity.PicassoTransfromationsActivity"/>
 
     </application>
 </manifest>

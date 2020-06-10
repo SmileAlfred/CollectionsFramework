@@ -7,6 +7,7 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 
 import com.example.collectionsframework.R;
+import com.example.collectionsframework.c10picasso.activity.PicassoActivity;
 import com.example.collectionsframework.c2okhttp.activity.OKHttpActivity;
 import com.example.collectionsframework.c2okhttp.adapter.CommonFrameFragmentAdapter;
 import com.example.collectionsframework.c2okhttp.base.BaseFragment;
@@ -19,8 +20,6 @@ import com.example.collectionsframework.c6volley.VolleyActivity;
 import com.example.collectionsframework.c7eventbus.EventBusActivity;
 import com.example.collectionsframework.c8butterknife.ButterknifeActivity;
 import com.example.collectionsframework.c9imageloader.acitvity.ImageLoaderActivity;
-
-import net.tsz.afinal.exception.AfinalException;
 
 /**
  * 作者：尚硅谷-杨光福 on 2016/7/21 19:27
@@ -83,6 +82,9 @@ public class CommonFrameFragment extends BaseFragment {
                     case "imageloader":
                         intent = new Intent(mContext, ImageLoaderActivity.class);
                         break;
+                    case "picasso":
+                        intent = new Intent(mContext, PicassoActivity.class);
+                        break;
                     default:
                         break;
                 }
@@ -98,7 +100,7 @@ public class CommonFrameFragment extends BaseFragment {
         Log.e(TAG, "常用框架Fragment数据被初始化了...");
         //准备数据
         datas = new String[]{"OKHttp", "nativeJsonPrase", "Gson", "FastJson", "xUtils3" , "Afinal"
-                , "Volley", "EventBus", "ButterKnife","ImageLoader","Retrofit2", "Fresco", "Glide", "greenDao", "RxJava", "picasso"
+                , "Volley", "EventBus", "ButterKnife","ImageLoader","Picasso","Retrofit2", "Fresco", "Glide", "greenDao", "RxJava", "picasso"
                 , "jcvideoplayer", "pulltorefresh", "Expandablelistview"
                 , "UniversalVideoView", "....."};
         //设置适配器

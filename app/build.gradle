@@ -8,7 +8,7 @@ android {
 
     defaultConfig {
         applicationId "com.example.collectionsframework"
-        minSdkVersion   14
+        minSdkVersion 14
         targetSdkVersion 29
         versionCode 1
         versionName "1.0"
@@ -47,4 +47,11 @@ dependencies {
     annotationProcessor 'com.jakewharton:butterknife-compiler:10.2.1'
     //对于 image-loader 的使用，要么就如下方式要么就引用jar包，二选一；
     implementation 'com.nostra13.universalimageloader:universal-image-loader:1.9.5'
+    implementation 'com.squareup.picasso:picasso:2.71828'
+    implementation 'jp.wasabeef:picasso-transformations:2.1.0'
+    // If you want to use the GPU Filters
+    implementation 'jp.co.cyberagent.android.gpuimage:gpuimage-library:1.4.1'
+}
+repositories {
+    jcenter()
 }
