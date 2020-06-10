@@ -120,7 +120,7 @@ Android常用基础框架、技术汇总；
 
 # 九、ImageLoader
 1. 特点：多线程下载 来自网络、文件等的图片；
-2. 最新地址：https://github.com/nostra13/Android-Universal-Image-Loader；要么使用jar包，要么使用 ```implementation 'com.nostra13.universalimageloader:universal-image-loader:1.9.5'```;
+2. 最新地址：https://github.com/nostra13/Android-Universal-Image-Loader ；要么使用jar包，要么使用 ```implementation 'com.nostra13.universalimageloader:universal-image-loader:1.9.5'```;
 3. 使用前要配置 Application;
 4. 实现：在ListView 、 GridView 、 ViewPager 中的显示；
 
