@@ -124,7 +124,19 @@ Android常用基础框架、技术汇总；
 3. 使用前要配置 Application;
 4. 实现：在ListView 、 GridView 、 ViewPager 中的显示；
 
-
+# 十、Picasso
+1. 下载地址：https://github.com/square/picasso
+2. 使用方法：    
+```
+	implementation 'jp.co.cyberagent.android.gpuimage:gpuimage-library:1.4.1'
+}
+repositories {
+    jcenter()
+}
+```
+3. 基本用法；```Picasso.get.load(imageUrl).into(imageView);```
+4. 图片裁剪；``` .resizeDimen(width,height)  ```
+5. 存在36种变换；包括，黑白化、肖像化、模糊化，马赛克化等等；
 
 
 
