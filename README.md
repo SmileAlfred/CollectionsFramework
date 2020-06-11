@@ -149,7 +149,18 @@ repositories {
 2. 变化比较大，最新的API值得总结和学习；
 3. 对于Glide的变换；出现BUG，一定要看最新的文档，因为很多方法都废弃了；
 
-
+# 十三、Fresco图片加载模块<重>
+1. 有更快的图片下载速度，可以加载和显示gif图，是很好的图片框架；
+2. 最新地址：https://github.com/facebook/fresco
+3. 注意添加依赖后还要在 Application 中配置；
+4. 依赖：
+   ```
+   implementation 'com.facebook.fresco:fresco:2.2.0'
+   implementation 'com.facebook.fresco:animated-gif:2.2.0'
+   implementation 'com.facebook.fresco:animated-webp:2.1.0'
+   implementation 'com.facebook.fresco:webpsupport:2.2.0'
+   ```
+5. 在 Application 中初始化Fresco：``` Fresco.initialize(this);```
 
 
 
