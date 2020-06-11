@@ -171,7 +171,10 @@ Android常用基础框架、技术汇总；
 6. 用PullToRefreshViewPager实现ViewPager刷新；
 7. WebView实现下拉刷新。
 
-
+# 十五、UniversalVideoView 模块
+1. 对系统播放器做了封装，对横竖屏切换以及控制栏做了优化；但并不是万能播放器；
+2. 地址：https://github.com/linsea/UniversalVideoView
+3. 在API22出现播放不了；23可以
 
 
 
