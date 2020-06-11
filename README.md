@@ -127,13 +127,13 @@ Android常用基础框架、技术汇总；
 # 十、Picasso
 1. 下载地址：https://github.com/square/picasso
 2. 使用方法：    
-```
-	implementation 'jp.co.cyberagent.android.gpuimage:gpuimage-library:1.4.1'
-}
-repositories {
-    jcenter()
-}
-```
+   ```
+   	implementation 'jp.co.cyberagent.android.gpuimage:gpuimage-library:1.4.1'
+   }
+   repositories {
+       jcenter()
+   }
+   ```
 3. 基本用法；```Picasso.get.load(imageUrl).into(imageView);```
 4. 图片裁剪；``` .resizeDimen(width,height)  ```
 5. 存在36种变换；包括，黑白化、肖像化、模糊化，马赛克化等等；
@@ -162,7 +162,14 @@ repositories {
    ```
 5. 在 Application 中初始化Fresco：``` Fresco.initialize(this);```
 
-
+# 十四、Android-PullToRefresh模块
+1. 下载地址：https://github.com/chrisbanes/Android-PullToRefresh ；通过导入module添加依赖方式；
+2. 实现ListView下拉刷新；
+3. 实现GridView下拉刷新；
+4. 实现Fragment下拉刷新；
+5. ViewPager中嵌套多个ListView下拉刷新；
+6. 用PullToRefreshViewPager实现ViewPager刷新；
+7. WebView实现下拉刷新。
 
 
 
