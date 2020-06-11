@@ -13,16 +13,19 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  *******************************************************************************/
-package com.atguigu.android.android_pulltorefresh;
+package com.example.collectionsframework.c14android_pulltorefresh;
 
 import android.app.Activity;
+import android.os.Build;
 import android.os.Bundle;
 import android.webkit.WebResourceRequest;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.TextView;
 
-import com.atguigu.android.R;
+import androidx.annotation.RequiresApi;
+
+import com.example.collectionsframework.R;
 import com.handmark.pulltorefresh.library.PullToRefreshWebView;
 
 public final class PullToRefreshWebViewActivity extends Activity {
@@ -51,17 +54,11 @@ public final class PullToRefreshWebViewActivity extends Activity {
 	}
 
 	private static class SampleWebViewClient extends WebViewClient {
+		@RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
 		@Override
 		public boolean shouldOverrideUrlLoading(WebView view, WebResourceRequest request) {
 			view.loadUrl(request.getUrl().toString());
 			return true;
 		}
-
-		//		@Override
-//		public boolean shouldOverrideUrlLoading(WebView view, String url) {
-//			view.loadUrl(url);
-//			return true;
-//		}
 	}
-
 }

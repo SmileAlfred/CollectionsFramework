@@ -42,23 +42,33 @@
         <activity android:name=".c10picasso.activity.PicassoActivity" />
         <activity android:name=".c10picasso.activity.PicassoListviewActivity" />
         <activity android:name=".c10picasso.activity.PicassoTransfromationsActivity" />
-        <activity android:name=".c11recyclerview.RecyclerViewActivity"
-            android:theme="@style/listDividerTheme"/>
-        <activity android:name=".c12glide.activity.GlideActivity"/>
-        <activity android:name=".c12glide.activity.GlideBaseActivity"/>
-        <activity android:name=".c12glide.activity.GlideRecyclerviewActivity"/>
-        <activity android:name=".c12glide.activity.GlideTranformationsActivity"/>
-        <activity android:name=".c13fresco.FrescoActivity"/>
-        <activity android:name=".c13fresco.FrescoAutoSizeActivity"/>
-        <activity android:name=".c13fresco.FrescoCircleAndCornerActivity"/>
-        <activity android:name=".c13fresco.FrescoCropActivity"/>
-        <activity android:name=".c13fresco.FrescoGifAcitivity"/>
-        <activity android:name=".c13fresco.FrescoJpegActivity"/>
-        <activity android:name=".c13fresco.FrescoListenerActivity"/>
-        <activity android:name=".c13fresco.FrescoModifyActivity"/>
-        <activity android:name=".c13fresco.FrescoMultiActivity"/>
-        <activity android:name=".c13fresco.FrescoResizeActivity"/>
-        <activity android:name=".c13fresco.FrescoSpimgActivity"/>
-
+        <activity
+            android:name=".c11recyclerview.RecyclerViewActivity"
+            android:theme="@style/listDividerTheme" />
+        <activity android:name=".c12glide.activity.GlideActivity" />
+        <activity android:name=".c12glide.activity.GlideBaseActivity" />
+        <activity android:name=".c12glide.activity.GlideRecyclerviewActivity" />
+        <activity android:name=".c12glide.activity.GlideTranformationsActivity" />
+        <activity android:name=".c13fresco.FrescoActivity" />
+        <activity android:name=".c13fresco.FrescoAutoSizeActivity" />
+        <activity android:name=".c13fresco.FrescoCircleAndCornerActivity" />
+        <activity android:name=".c13fresco.FrescoCropActivity" />
+        <activity android:name=".c13fresco.FrescoGifAcitivity" />
+        <activity android:name=".c13fresco.FrescoJpegActivity" />
+        <activity android:name=".c13fresco.FrescoListenerActivity" />
+        <activity android:name=".c13fresco.FrescoModifyActivity" />
+        <activity android:name=".c13fresco.FrescoMultiActivity" />
+        <activity android:name=".c13fresco.FrescoResizeActivity" />
+        <activity android:name=".c13fresco.FrescoSpimgActivity" />
+        <activity android:name=".c14android_pulltorefresh.PullToRefreshMainActivity" />
+        <activity android:name=".c14android_pulltorefresh.PullToRefreshGridActivity" />
+        <activity android:name=".c14android_pulltorefresh.PullToRefreshListActivity" />
+        <activity android:name=".c14android_pulltorefresh.PullToRefreshListFragmentActivity" />
+        <activity android:name=".c14android_pulltorefresh.PullToRefreshListInViewPagerActivity" />
+        <activity android:name=".c14android_pulltorefresh.PullToRefreshViewPagerActivity" />
+        <activity android:name=".c14android_pulltorefresh.PullToRefreshWebViewActivity" />
+        <activity
+            android:name=".c15universalvideoview.UniversalVideoViewActivity"
+            android:configChanges="keyboardHidden|screenSize|orientation" />
     </application>
 </manifest>

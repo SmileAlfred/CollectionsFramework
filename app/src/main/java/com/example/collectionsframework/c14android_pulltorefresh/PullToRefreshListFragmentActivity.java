@@ -13,16 +13,17 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  *******************************************************************************/
-package com.atguigu.android.android_pulltorefresh;
+package com.example.collectionsframework.c14android_pulltorefresh;
 
 import android.os.AsyncTask;
 import android.os.Bundle;
-import android.support.v4.app.FragmentActivity;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
 
-import com.atguigu.android.R;
+import androidx.fragment.app.FragmentActivity;
+
+import com.example.collectionsframework.R;
 import com.handmark.pulltorefresh.extras.listfragment.PullToRefreshListFragment;
 import com.handmark.pulltorefresh.library.PullToRefreshBase;
 import com.handmark.pulltorefresh.library.PullToRefreshBase.OnRefreshListener;

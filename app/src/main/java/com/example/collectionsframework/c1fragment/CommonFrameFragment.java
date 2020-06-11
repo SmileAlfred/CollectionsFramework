@@ -11,6 +11,8 @@ import com.example.collectionsframework.c10picasso.activity.PicassoActivity;
 import com.example.collectionsframework.c11recyclerview.RecyclerViewActivity;
 import com.example.collectionsframework.c12glide.activity.GlideActivity;
 import com.example.collectionsframework.c13fresco.FrescoActivity;
+import com.example.collectionsframework.c14android_pulltorefresh.PullToRefreshMainActivity;
+import com.example.collectionsframework.c15universalvideoview.UniversalVideoViewActivity;
 import com.example.collectionsframework.c2okhttp.activity.OKHttpActivity;
 import com.example.collectionsframework.c2okhttp.base.BaseFragment;
 import com.example.collectionsframework.c3json.activity.FastJsonActivity;
@@ -107,7 +109,7 @@ public class CommonFrameFragment extends BaseFragment implements View.OnClickLis
         item28 = view.findViewById(R.id.item28);
         item29 = view.findViewById(R.id.item29);
         item30 = view.findViewById(R.id.item30);
-        Log.e(TAG, "常用框架Fragment页面.item1 =? null "+ (item1 == null)  );
+        Log.e(TAG, "常用框架Fragment页面.item1 =? null " + (item1 == null));
 
 
         return view;
@@ -120,9 +122,9 @@ public class CommonFrameFragment extends BaseFragment implements View.OnClickLis
         //准备数据
         datas = new String[]{"OKHttp", "NativeJsonPrase", "Gson", "FastJson", "xUtils3"
                 , "Afinal", "Volley", "EventBus", "ButterKnife", "ImageLoader", "Picasso"
-                , "RecyclerView","Glide", "Fresco", "Retrofit2",  "greenDao", "RxJava"
-                , "jcvideoplayer", "pulltorefresh", "Expandablelistview"
-                , "UniversalVideoView", "更多"};
+                , "RecyclerView", "Glide", "Fresco", "PullToRefresh", "UniversalVideoView","Retrofit2", "greenDao", "RxJava"
+                , "jcvideoplayer", "Expandablelistview"
+                , "更多"};
         mTextViews.add(item1);
         mTextViews.add(item2);
         mTextViews.add(item3);
@@ -158,12 +160,12 @@ public class CommonFrameFragment extends BaseFragment implements View.OnClickLis
             if (mTextViews.get(i) != null) {
                 mTextViews.get(i).setText(datas[i]);
                 mTextViews.get(i).setOnClickListener(this);
-            }else {
-                Log.e(TAG, "常用框架Fragment页面.第 "+ i +" 个TextView为null");
+            } else {
+                Log.e(TAG, "常用框架Fragment页面.第 " + i + " 个TextView为null");
             }
         }
         //如果数据少而 TextView 多，那么让多余的 TextView 隐藏
-        if(datas.length< mTextViews.size()){
+        if (datas.length < mTextViews.size()) {
             for (int i = datas.length; i < mTextViews.size(); i++) {
                 mTextViews.get(i).setVisibility(View.GONE);
             }
@@ -215,7 +217,7 @@ public class CommonFrameFragment extends BaseFragment implements View.OnClickLis
                 intent = new Intent(mContext, RecyclerViewActivity.class);
                 break;
             case "更多":
-                Toast.makeText(getContext(),"敬请期待",Toast.LENGTH_SHORT).show();
+                Toast.makeText(getContext(), "敬请期待", Toast.LENGTH_SHORT).show();
                 break;
             case "glide":
                 intent = new Intent(mContext, GlideActivity.class);
@@ -223,10 +225,16 @@ public class CommonFrameFragment extends BaseFragment implements View.OnClickLis
             case "fresco":
                 intent = new Intent(mContext, FrescoActivity.class);
                 break;
+            case "pulltorefresh":
+                intent = new Intent(mContext, PullToRefreshMainActivity.class);
+                break;
+            case "universalvideoview":
+                intent = new Intent(mContext, UniversalVideoViewActivity.class);
+                break;
             default:
                 break;
         }
-        if(intent != null){
+        if (intent != null) {
             startActivity(intent);
         }
     }

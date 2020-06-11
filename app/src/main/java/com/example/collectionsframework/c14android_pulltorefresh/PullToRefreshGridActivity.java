@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  *******************************************************************************/
-package com.atguigu.android.android_pulltorefresh;
+package com.example.collectionsframework.c14android_pulltorefresh;
 
 import android.app.Activity;
 import android.os.AsyncTask;
@@ -25,7 +25,7 @@ import android.widget.GridView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.atguigu.android.R;
+import com.example.collectionsframework.R;
 import com.handmark.pulltorefresh.library.PullToRefreshBase;
 import com.handmark.pulltorefresh.library.PullToRefreshBase.OnRefreshListener2;
 import com.handmark.pulltorefresh.library.PullToRefreshGridView;

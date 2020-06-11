@@ -13,20 +13,21 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  *******************************************************************************/
-package com.atguigu.android.android_pulltorefresh;
+package com.example.collectionsframework.c14android_pulltorefresh;
 
 import android.app.Activity;
 import android.os.AsyncTask;
 import android.os.Bundle;
-import android.support.v4.view.PagerAdapter;
-import android.support.v4.view.ViewPager;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.ViewGroup.LayoutParams;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.atguigu.android.R;
+import androidx.viewpager.widget.PagerAdapter;
+import androidx.viewpager.widget.ViewPager;
+
+import com.example.collectionsframework.R;
 import com.handmark.pulltorefresh.extras.viewpager.PullToRefreshViewPager;
 import com.handmark.pulltorefresh.library.PullToRefreshBase;
 import com.handmark.pulltorefresh.library.PullToRefreshBase.OnRefreshListener;
@@ -63,8 +64,8 @@ public class PullToRefreshViewPagerActivity extends Activity implements OnRefres
 
 	static class SamplePagerAdapter extends PagerAdapter {
 
-		private static int[] sDrawables = { R.drawable.atguigu_logo, R.drawable.atguigu_logo, R.drawable.atguigu_logo,
-				R.drawable.atguigu_logo, R.drawable.atguigu_logo, R.drawable.atguigu_logo };
+		private static int[] sDrawables = { R.drawable.i_logo, R.drawable.i_logo, R.drawable.i_logo,
+				R.drawable.i_logo, R.drawable.i_logo, R.drawable.i_logo };
 
 		@Override
 		public int getCount() {

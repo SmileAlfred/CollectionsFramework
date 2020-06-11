@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  *******************************************************************************/
-package com.atguigu.android.android_pulltorefresh;
+package com.example.collectionsframework.c14android_pulltorefresh;
 
 import android.app.ListActivity;
 import android.os.AsyncTask;
@@ -24,7 +24,7 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.atguigu.android.R;
+import com.example.collectionsframework.R;
 import com.handmark.pulltorefresh.library.PullToRefreshBase;
 import com.handmark.pulltorefresh.library.PullToRefreshBase.OnLastItemVisibleListener;
 import com.handmark.pulltorefresh.library.PullToRefreshBase.State;
@@ -51,7 +51,9 @@ public final class PullToRefreshListActivity extends ListActivity {
             "Acorn", "Adelost", "Affidelice au Chablis", "Afuega'l Pitu", "Airag", "Airedale", "Aisy Cendre",
             "Allgauer Emmentaler"};
 
-    /** Called when the activity is first created. */
+    /**
+     * Called when the activity is first created.
+     */
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -80,7 +82,7 @@ public final class PullToRefreshListActivity extends ListActivity {
 //            }
 //        });
 
-        // Set a listener to be invoked when the list should be refreshed.
+        // 支持上拉、下拉刷新；
         mPullRefreshListView.setOnRefreshListener(new PullToRefreshBase.OnRefreshListener2<ListView>() {
 
             /**
@@ -175,10 +177,10 @@ public final class PullToRefreshListActivity extends ListActivity {
 
         @Override
         protected void onPostExecute(String[] result) {
-            if(mPullRefreshListView.getMode()== PullToRefreshBase.Mode.PULL_FROM_START){
+            if (mPullRefreshListView.getMode() == PullToRefreshBase.Mode.PULL_FROM_START) {
                 //下拉刷新
                 mListItems.addFirst("刷新请求到的新数据...");
-            }else if(mPullRefreshListView.getMode()==PullToRefreshBase.Mode.PULL_FROM_END){
+            } else if (mPullRefreshListView.getMode() == PullToRefreshBase.Mode.PULL_FROM_END) {
                 mListItems.addLast("上拉数据请求到了...");
             }
 
@@ -190,7 +192,4 @@ public final class PullToRefreshListActivity extends ListActivity {
             super.onPostExecute(result);
         }
     }
-
-
-
 }

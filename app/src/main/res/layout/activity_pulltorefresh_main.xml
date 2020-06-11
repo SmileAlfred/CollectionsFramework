@@ -2,6 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#fff"
     android:orientation="vertical">
 
     <include layout="@layout/titlebar"></include>
@@ -10,12 +11,16 @@
         android:id="@+id/listview"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="#fff"
+        android:textSize="24sp"
         android:text="ListView中使用"
         android:textAllCaps="false" />
+
     <Button
         android:id="@+id/gridview"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="#fff"      android:textSize="24sp"
         android:text="GridView中使用"
         android:textAllCaps="false" />
 
@@ -23,6 +28,7 @@
         android:id="@+id/fragment"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="#fff"      android:textSize="24sp"
         android:text="Fragment中使用"
         android:textAllCaps="false" />
 
@@ -30,6 +36,7 @@
         android:id="@+id/viewpager"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="#fff"      android:textSize="24sp"
         android:text="ListView在ViewPager"
         android:textAllCaps="false" />
 
@@ -37,6 +44,7 @@
         android:id="@+id/viewpager2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="#fff"      android:textSize="24sp"
         android:text="ViewPager"
         android:textAllCaps="false" />
 
@@ -44,7 +52,9 @@
         android:id="@+id/webview"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="#fff"
         android:text="WebView中使用"
-        android:textAllCaps="false" />
+        android:textAllCaps="false"
+        android:textSize="24sp" />
 
 </LinearLayout>

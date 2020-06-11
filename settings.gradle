@@ -1,2 +1,6 @@
+include ':pullToRefreshListFragment'
+include ':pullToRefreshViewPager'
+include ':PullToRefresh_sample'
+include ':PullToRefresh_library'
 rootProject.name='CollectionsFramework'
 include ':app', ':sample-okhttp', ':okhttputils', ':xUtils3_Sample', ':xutils'

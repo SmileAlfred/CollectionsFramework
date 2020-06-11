@@ -1,4 +1,4 @@
-package com.atguigu.android.android_pulltorefresh;
+package com.example.collectionsframework.c14android_pulltorefresh;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -7,12 +7,9 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-import com.atguigu.android.R;
+import com.example.collectionsframework.R;
 
 /**
- * 作者：尚硅谷-杨光福 on 11/5/2016 10:05
- * 微信：yangguangfu520
- * QQ号：541433511
  * 作用：PullToRefresh主入口
  */
 public class PullToRefreshMainActivity extends Activity implements View.OnClickListener {
