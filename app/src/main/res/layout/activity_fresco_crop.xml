@@ -1,0 +1,104 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <include layout="@layout/titlebar"></include>
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/sdv_fresco_crop"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="48dp"
+        android:background="@android:color/black"
+        fresco:placeholderImage="@drawable/i_logo" />
+
+    <TextView
+        android:id="@+id/tv_fresco_explain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="#fff"
+        android:gravity="center"
+        android:textSize="18sp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:background="#fff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/bt_fresco_center"
+                android:textSize="24sp"               android:background="#fff"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="center" />
+
+            <Button
+                android:id="@+id/bt_fresco_centercrop"
+                android:textSize="24sp"                android:background="#fff"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="centerCrop" />
+
+            <Button
+                android:id="@+id/bt_fresco_focuscrop"
+                android:background="#fff"
+                android:layout_width="match_parent"
+                android:textSize="24sp"                android:layout_height="wrap_content"
+                android:text="focuscrop" />
+
+            <Button
+                android:id="@+id/bt_fresco_centerinside"
+                android:textSize="24sp"                 android:layout_width="match_parent"
+                android:background="#fff"
+                android:layout_height="wrap_content"
+                android:text="centerInside" />
+
+            <Button
+                android:id="@+id/bt_fresco_fitcenter"
+                android:background="#fff"
+                android:textSize="24sp"               android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="fitCenter" />
+
+            <Button
+                android:id="@+id/bt_fresco_fitstart"
+                android:layout_width="match_parent"
+                android:background="#fff"
+                android:textSize="24sp"               android:layout_height="wrap_content"
+                android:text="fitstart" />
+
+            <Button
+                android:id="@+id/bt_fresco_fitend"
+                android:background="#fff"
+                android:layout_width="match_parent"
+                android:textSize="24sp"               android:layout_height="wrap_content"
+                android:text="fitEnd" />
+
+            <Button
+                android:background="#fff"
+                android:id="@+id/bt_fresco_fitxy"
+                android:textSize="24sp"                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="fitxy" />
+
+            <Button
+                android:id="@+id/bt_fresco_none"
+                android:layout_width="match_parent"
+             android:textSize="24sp"   android:layout_height="wrap_content"
+                android:background="#fff"
+                android:text="none" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

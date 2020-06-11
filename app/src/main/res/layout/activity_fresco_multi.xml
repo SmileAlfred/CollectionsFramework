@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_fresco_multi"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical">
+
+    <include layout="@layout/titlebar"></include>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#fff"
+            android:orientation="vertical">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/sdv_fresco_multi"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="48dp"
+                android:background="#fff"
+                fresco:placeholderImage="@drawable/i_logo" />
+            <TextView
+                android:layout_width="match_parent"
+                android:id="@+id/multi_desc"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:textColor="#ff0000"
+                android:textSize="22sp"
+                android:visibility="gone"
+                android:text="本地图片的复用
+在请求之前，还会去内存中请求一次图片，没有才会先去本地，最后去网络uri
+本地准备复用图片的uri  如果本地这个图片不存在，会自动去加载下一个uri"/>
+
+            <Button
+                android:id="@+id/bt_fresco_multiImg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="#fff"
+                android:padding="10dp"
+                android:text="先显示低分辨率的图，然后是高分辨率的图"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/bt_fresco_thumbnailImg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="#fff"
+                android:text="本地缩略图预览"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/bt_fresco_multiplexImg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="#fff"
+                android:text="本地图片复用"
+                android:textSize="24sp" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

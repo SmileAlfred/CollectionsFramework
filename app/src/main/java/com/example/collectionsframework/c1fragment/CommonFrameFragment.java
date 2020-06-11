@@ -10,6 +10,7 @@ import com.example.collectionsframework.R;
 import com.example.collectionsframework.c10picasso.activity.PicassoActivity;
 import com.example.collectionsframework.c11recyclerview.RecyclerViewActivity;
 import com.example.collectionsframework.c12glide.activity.GlideActivity;
+import com.example.collectionsframework.c13fresco.FrescoActivity;
 import com.example.collectionsframework.c2okhttp.activity.OKHttpActivity;
 import com.example.collectionsframework.c2okhttp.base.BaseFragment;
 import com.example.collectionsframework.c3json.activity.FastJsonActivity;
@@ -119,7 +120,7 @@ public class CommonFrameFragment extends BaseFragment implements View.OnClickLis
         //准备数据
         datas = new String[]{"OKHttp", "NativeJsonPrase", "Gson", "FastJson", "xUtils3"
                 , "Afinal", "Volley", "EventBus", "ButterKnife", "ImageLoader", "Picasso"
-                , "RecyclerView","Glide",  "Retrofit2", "Fresco", "greenDao", "RxJava"
+                , "RecyclerView","Glide", "Fresco", "Retrofit2",  "greenDao", "RxJava"
                 , "jcvideoplayer", "pulltorefresh", "Expandablelistview"
                 , "UniversalVideoView", "更多"};
         mTextViews.add(item1);
@@ -218,6 +219,9 @@ public class CommonFrameFragment extends BaseFragment implements View.OnClickLis
                 break;
             case "glide":
                 intent = new Intent(mContext, GlideActivity.class);
+                break;
+            case "fresco":
+                intent = new Intent(mContext, FrescoActivity.class);
                 break;
             default:
                 break;

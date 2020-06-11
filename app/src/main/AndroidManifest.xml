@@ -48,5 +48,17 @@
         <activity android:name=".c12glide.activity.GlideBaseActivity"/>
         <activity android:name=".c12glide.activity.GlideRecyclerviewActivity"/>
         <activity android:name=".c12glide.activity.GlideTranformationsActivity"/>
+        <activity android:name=".c13fresco.FrescoActivity"/>
+        <activity android:name=".c13fresco.FrescoAutoSizeActivity"/>
+        <activity android:name=".c13fresco.FrescoCircleAndCornerActivity"/>
+        <activity android:name=".c13fresco.FrescoCropActivity"/>
+        <activity android:name=".c13fresco.FrescoGifAcitivity"/>
+        <activity android:name=".c13fresco.FrescoJpegActivity"/>
+        <activity android:name=".c13fresco.FrescoListenerActivity"/>
+        <activity android:name=".c13fresco.FrescoModifyActivity"/>
+        <activity android:name=".c13fresco.FrescoMultiActivity"/>
+        <activity android:name=".c13fresco.FrescoResizeActivity"/>
+        <activity android:name=".c13fresco.FrescoSpimgActivity"/>
+
     </application>
 </manifest>

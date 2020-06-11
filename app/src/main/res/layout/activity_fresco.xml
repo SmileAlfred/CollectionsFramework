@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#fff"
+    android:id="@+id/activity_fresco"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/titlebar"></include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/bt_fresco_spimg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:background="#fff"
+                android:textSize="24sp"
+                android:text="带进度条的图片" />
+
+            <Button
+                android:id="@+id/bt_fresco_crop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:background="#fff"
+                android:textSize="24sp"
+                android:text="图片的不同裁剪" />
+
+            <Button
+                android:id="@+id/bt_fresco_circleAndCorner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:background="#fff"
+                android:textSize="24sp"
+                android:text="圆形和圆角图片" />
+
+            <Button
+                android:id="@+id/bt_fresco_jpeg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:background="#fff"
+                android:textSize="24sp"
+                android:text="渐进式展示图片" />
+
+            <Button
+                android:id="@+id/bt_fresco_gif"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:background="#fff"
+                android:textSize="24sp"
+                android:text="GIF动画图片" />
+
+            <Button
+                android:id="@+id/bt_fresco_multi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:background="#fff"
+                android:textSize="24sp"
+                android:text="多图请求及图片复用" />
+
+            <Button
+                android:id="@+id/bt_fresco_listener"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:background="#fff"
+                android:textSize="24sp"
+                android:text="图片加载监听" />
+
+            <Button
+                android:id="@+id/bt_fresco_resize"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:background="#fff"
+                android:textSize="24sp"
+                android:text="图片缩放和旋转" />
+
+            <Button
+                android:id="@+id/bt_fresco_modifyImg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:background="#fff"
+                android:textSize="24sp"
+                android:text="修改图片" />
+
+            <Button
+                android:id="@+id/bt_fresco_autoSizeImg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:background="#fff"
+                android:textSize="24sp"
+                android:text="动态展示图片" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
