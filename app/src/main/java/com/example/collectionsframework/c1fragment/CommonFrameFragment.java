@@ -13,6 +13,7 @@ import com.example.collectionsframework.c12glide.activity.GlideActivity;
 import com.example.collectionsframework.c13fresco.FrescoActivity;
 import com.example.collectionsframework.c14android_pulltorefresh.PullToRefreshMainActivity;
 import com.example.collectionsframework.c15universalvideoview.UniversalVideoViewActivity;
+import com.example.collectionsframework.c16jiecaovideoplayer.activity.JieCaoVideoPlayerMainActivity;
 import com.example.collectionsframework.c2okhttp.activity.OKHttpActivity;
 import com.example.collectionsframework.c2okhttp.base.BaseFragment;
 import com.example.collectionsframework.c3json.activity.FastJsonActivity;
@@ -122,8 +123,9 @@ public class CommonFrameFragment extends BaseFragment implements View.OnClickLis
         //准备数据
         datas = new String[]{"OKHttp", "NativeJsonPrase", "Gson", "FastJson", "xUtils3"
                 , "Afinal", "Volley", "EventBus", "ButterKnife", "ImageLoader", "Picasso"
-                , "RecyclerView", "Glide", "Fresco", "PullToRefresh", "UniversalVideoView","Retrofit2", "greenDao", "RxJava"
-                , "jcvideoplayer", "Expandablelistview"
+                , "RecyclerView", "Glide", "Fresco", "PullToRefresh", "UniversalVideoView"
+                ,"JCVideoPlayer","Retrofit2", "greenDao", "RxJava"
+                , "Expandablelistview"
                 , "更多"};
         mTextViews.add(item1);
         mTextViews.add(item2);
@@ -230,6 +232,9 @@ public class CommonFrameFragment extends BaseFragment implements View.OnClickLis
                 break;
             case "universalvideoview":
                 intent = new Intent(mContext, UniversalVideoViewActivity.class);
+                break;
+            case "jcvideoplayer":
+                intent = new Intent(mContext, JieCaoVideoPlayerMainActivity.class);
                 break;
             default:
                 break;

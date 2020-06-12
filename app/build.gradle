@@ -37,6 +37,7 @@ dependencies {
     implementation project(path: ':pullToRefreshListFragment')
     implementation project(path: ':pullToRefreshViewPager')
     implementation project(path: ':PullToRefresh_library')
+    implementation project(path: ':jcvideoplayer-lib')
     annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
     implementation 'com.github.bumptech.glide:glide:4.11.0'
     // If you want to use the GPU Filters
@@ -66,6 +67,8 @@ dependencies {
     implementation 'com.facebook.fresco:webpsupport:2.2.0'
 
     implementation 'com.linsea:universalvideoview:1.1.0@aar'
+    //节操播放器更改为饺子播放器，但是其中API还没有看；
+//    implementation 'cn.jzvd:jiaozivideoplayer:7.4.1'
 }
 repositories {
     jcenter()

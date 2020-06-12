@@ -1,4 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.example.collectionsframework">
 
     <uses-permission android:name="android.permission.INTERNET" />
@@ -70,5 +71,28 @@
         <activity
             android:name=".c15universalvideoview.UniversalVideoViewActivity"
             android:configChanges="keyboardHidden|screenSize|orientation" />
+        <activity android:name=".c16jiecaovideoplayer.activity.JieCaoVideoPlayerMainActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/JieCaoVideoPlayerTheme"/>
+        <activity android:name=".c16jiecaovideoplayer.activity.ListViewActivity" />
+        <activity android:name=".c16jiecaovideoplayer.activity.ListViewMultiHolderActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".c16jiecaovideoplayer.activity.ListViewNormalActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".c16jiecaovideoplayer.activity.ListViewViewpagerActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".c16jiecaovideoplayer.activity.RecyclerViewNormalActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity android:name=".c16jiecaovideoplayer.activity.UISmallChangeActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity android:name=".c16jiecaovideoplayer.activity.WebViewActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"/>
     </application>
 </manifest>

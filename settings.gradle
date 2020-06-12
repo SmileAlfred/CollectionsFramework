@@ -1,3 +1,5 @@
+include ':jcvideoplayer-lib'
+include ':JieCaoVideoPlayer'
 include ':pullToRefreshListFragment'
 include ':pullToRefreshViewPager'
 include ':PullToRefresh_sample'
