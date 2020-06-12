@@ -144,7 +144,7 @@ Android常用基础框架、技术汇总；
 3. 注意：如何设置其添加、删除动画？
 4. 详细使用见博客：https://blog.csdn.net/liusaisaiV1/article/details/106038665
 
-# 十二、Glide（有BUG）
+# 十二、Glide（重！有BUG）
 1. 可加载图片、动图、本地等资源；地址：https://github.com/bumptech/glide
 2. 变化比较大，最新的API值得总结和学习；
 3. 对于Glide的变换；出现BUG，一定要看最新的文档，因为很多方法都废弃了；
@@ -176,8 +176,8 @@ Android常用基础框架、技术汇总；
 2. 地址：https://github.com/linsea/UniversalVideoView
 3. 在API22出现播放不了；23可以
 
-# 十六、节操播放器
-1. 已经导入并优化、净化老版本的；新版本在：https://github.com/lipangit/JiaoZiVideoPlayer (还没有看）；
+# 十六、节操（饺子）播放器（重）
+1. 依赖方式：导入module，随后依赖库；已经导入并优化、净化老版本的；
 2. 实现小窗口播放；
 3. 实现在ListView中播放视频；
 4. 实现在ViewPager的ListView中播放视频；
@@ -185,6 +185,16 @@ Android常用基础框架、技术汇总；
 6. 实现RecyclerView中播放视频。
 7. 可以自定义播放器UI；
 8. 可以在WebView中播放视频；
+9. 导入了最新的“饺子播放器”，并净化了视频链接；没有进行集成；
+10. 实现的功能：小窗口播放、倍速、分享按钮等牛操作；
+
+# 十七、Banner（重）
+1. 依赖方式：```implementation 'com.youth.banner:banner:1.4.10'``` ；这是继承的老版本；
+2. 已经导入新版本的module；但并未继承；
+3. 实现多种动画切换效果；
+4. 实现在 RecyclerView 中嵌套 Banner；在 ConstrainLayout 中嵌套 Banner；在 ViewPager+fragment+RecyclerView中嵌套 Banner;以及仿照淘宝的Banner;
+
+
 
 
 
