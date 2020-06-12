@@ -2,19 +2,29 @@ package com.example.collectionsframework;
 
 import android.app.Application;
 import android.content.Context;
+import android.util.DisplayMetrics;
 
 import com.facebook.drawee.backends.pipeline.Fresco;
 import com.nostra13.universalimageloader.cache.disc.naming.Md5FileNameGenerator;
 import com.nostra13.universalimageloader.core.ImageLoader;
 import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;
 import com.nostra13.universalimageloader.core.assist.QueueProcessingType;
+import com.zxy.recovery.core.Recovery;
 
 import org.xutils.x;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 /**
  * 作用：代表整个软件
  */
 public class MyApplication extends Application {
+    public static List<?> images=new ArrayList<>();
+    public static List<String> titles=new ArrayList<>();
+    //屏幕的高
+    public static int H;
     @Override
     public void onCreate() {
         super.onCreate();
@@ -27,8 +37,39 @@ public class MyApplication extends Application {
         // 初始化Fresco
         initFresco();
 
+        //初始化Banner
+        initBanner();
+
+    }
+    private void initBanner() {
+        H=getScreenH(this);
+        Fresco.initialize(this);
+
+        //让软件状态还原的框架
+        Recovery.getInstance()
+                .debug(true)
+                .recoverInBackground(false)
+                .recoverStack(true)
+                .mainPage(MainActivity.class)
+                .init(this);
+
+
+        String[] urls = getResources().getStringArray(R.array.url4);
+        String[] tips = getResources().getStringArray(R.array.title);
+        List list = Arrays.asList(urls);
+        images = new ArrayList(list);
+        titles= Arrays.asList(tips);
     }
 
+    /**
+     * 得到屏幕的高
+     * @param aty
+     * @return
+     */
+    public int getScreenH(Context aty) {
+        DisplayMetrics dm = aty.getResources().getDisplayMetrics();
+        return dm.heightPixels;
+    }
     private void initFresco() {
         Fresco.initialize(this);
     }

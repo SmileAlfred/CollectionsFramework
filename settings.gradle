@@ -1,3 +1,7 @@
+include ':jiaozivideoplayer-library'
+include ':jiaozivideoplayer-sample'
+include ':banner'
+include ':banner-sample'
 include ':jcvideoplayer-lib'
 include ':JieCaoVideoPlayer'
 include ':pullToRefreshListFragment'

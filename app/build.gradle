@@ -69,6 +69,8 @@ dependencies {
     implementation 'com.linsea:universalvideoview:1.1.0@aar'
     //节操播放器更改为饺子播放器，但是其中API还没有看；
 //    implementation 'cn.jzvd:jiaozivideoplayer:7.4.1'
+    implementation 'com.youth.banner:banner:1.4.10'
+    implementation 'com.zxy.android:recovery:0.0.8'
 }
 repositories {
     jcenter()

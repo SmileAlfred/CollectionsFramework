@@ -109,5 +109,14 @@
             android:configChanges="orientation|screenSize|keyboardHidden"
             android:screenOrientation="portrait"
             android:theme="@style/JieCaoVideoPlayerTheme" />
+
+        <activity android:name=".c17banner.activity.BannerMainActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <activity android:name=".c17banner.activity.BannerAnimationActivity"/>
+        <activity android:name=".c17banner.activity.BannerStyleActivity"/>
+        <activity android:name=".c17banner.activity.CustomBannerActivity"/>
+        <activity android:name=".c17banner.activity.IndicatorPositionActivity"/>
+
+
     </application>
 </manifest>
