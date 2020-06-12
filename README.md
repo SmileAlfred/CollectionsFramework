@@ -199,7 +199,9 @@ Android常用基础框架、技术汇总；
 2. 引用本地库；或者尝试```implementation 'com.github.iwgang:countdownview:2.1.6'```
 3. 可以动态配置CountdownView秒杀样式、在 ListView 中秒杀倒计时、在 RecyclerView 中秒杀倒计时、在原生的RecyclerView上实现倒计时；
 
-
+# 十九、OpenDanmaku
+1. 依赖方式：导入module后依赖（需要修改自定义控件，实现弹幕和视频兼容）地址：https://github.com/linsea/OpenDanmaku
+2. 已经不再更新维护，可以寻找更新的demo；
 
 
 
