@@ -147,7 +147,7 @@ Android常用基础框架、技术汇总；
 # 十二、Glide（重！有BUG）
 1. 可加载图片、动图、本地等资源；地址：https://github.com/bumptech/glide
 2. 变化比较大，最新的API值得总结和学习；
-3. 对于Glide的变换；出现BUG，一定要看最新的文档，因为很多方法都废弃了；
+3. 对于Glide的变换；出现BUG，一定要看最新的文档，因为很多transform方法都废弃了；
 
 # 十三、Fresco图片加载模块<重>
 1. 有更快的图片下载速度，可以加载和显示gif图，是很好的图片框架；
@@ -194,6 +194,10 @@ Android常用基础框架、技术汇总；
 3. 实现多种动画切换效果；
 4. 实现在 RecyclerView 中嵌套 Banner；在 ConstrainLayout 中嵌套 Banner；在 ViewPager+fragment+RecyclerView中嵌套 Banner;以及仿照淘宝的Banner;
 
+# 十八、CountDownView
+1. 各种各样的倒计时集合；地址：https://github.com/iwgang/CountdownView
+2. 引用本地库；或者尝试```implementation 'com.github.iwgang:countdownview:2.1.6'```
+3. 可以动态配置CountdownView秒杀样式、在 ListView 中秒杀倒计时、在 RecyclerView 中秒杀倒计时、在原生的RecyclerView上实现倒计时；
 
 
 
