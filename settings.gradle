@@ -1,3 +1,6 @@
+include ':opendanmaku-library'
+include ':opendanmaku-sample'
+include ':opendanmaku'
 include ':CountdownView-library'
 include ':CountdownView-master'
 include ':jiaozivideoplayer-library'

@@ -39,6 +39,7 @@ dependencies {
     implementation project(path: ':PullToRefresh_library')
     implementation project(path: ':jcvideoplayer-lib')
     implementation project(path: ':CountdownView-library')
+    implementation project(path: ':opendanmaku-library')
     annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
     implementation 'com.github.bumptech.glide:glide:4.11.0'
     // If you want to use the GPU Filters

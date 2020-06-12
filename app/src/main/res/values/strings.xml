@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name" translatable="false">常见框架</string>
+    <string name="action_settings" translatable="false">action_settings</string>
+    <string name="show" translatable="false">show</string>
+    <string name="hide" translatable="false">hide</string>
+    <string name="send" translatable="false">send</string>
+    <string name="text_hint" translatable="false">input text here</string>
+    <string name="empty_prompt">please input text</string>
 </resources>

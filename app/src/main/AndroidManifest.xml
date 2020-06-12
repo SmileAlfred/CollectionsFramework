@@ -1,5 +1,4 @@
-<manifest
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.collectionsframework">
 
@@ -111,19 +110,23 @@
             android:screenOrientation="portrait"
             android:theme="@style/JieCaoVideoPlayerTheme" />
 
-        <activity android:name=".c17banner.activity.BannerMainActivity"
-            android:theme="@style/Theme.AppCompat.NoActionBar"/>
-        <activity android:name=".c17banner.activity.BannerAnimationActivity"/>
-        <activity android:name=".c17banner.activity.BannerStyleActivity"/>
-        <activity android:name=".c17banner.activity.CustomBannerActivity"/>
-        <activity android:name=".c17banner.activity.IndicatorPositionActivity"/>
+        <activity
+            android:name=".c17banner.activity.BannerMainActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity android:name=".c17banner.activity.BannerAnimationActivity" />
+        <activity android:name=".c17banner.activity.BannerStyleActivity" />
+        <activity android:name=".c17banner.activity.CustomBannerActivity" />
+        <activity android:name=".c17banner.activity.IndicatorPositionActivity" />
 
-        <activity android:name=".c18countdownview.CountdownViewMainActivity"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
-        <activity android:name=".c18countdownview.CountdownViewListViewActivity"/>
-        <activity android:name=".c18countdownview.CountdownViewRecyclerViewActivity"/>
-        <activity android:name=".c18countdownview.DynamicShowActivity"/>
-
+        <activity
+            android:name=".c18countdownview.CountdownViewMainActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity android:name=".c18countdownview.CountdownViewListViewActivity" />
+        <activity android:name=".c18countdownview.CountdownViewRecyclerViewActivity" />
+        <activity android:name=".c18countdownview.DynamicShowActivity" />
+        <activity
+            android:name=".c19opendanmaku.activity.OpenDanmakuMainActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
 
     </application>
 </manifest>
