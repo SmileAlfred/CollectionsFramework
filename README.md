@@ -203,16 +203,6 @@ Android常用基础框架、技术汇总；
 1. 依赖方式：导入module后依赖（需要修改自定义控件，实现弹幕和视频兼容）地址：https://github.com/linsea/OpenDanmaku
 2. 已经不再更新维护，可以寻找更新的demo；
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 二十、TabLayout
+1. 依赖方式：```implementation 'com.android.support:design:28.0.0'```
+2. 配合 ViewPager 和 Fragment 使用；
