@@ -16,7 +16,7 @@
         android:layout_width="300dp"
         android:layout_height="300dp"
         android:layout_marginTop="48dp"
-        fresco:placeholderImage="@drawable/i_logo" />
+        fresco:placeholderImage="@drawable/i_icon" />
 
     <Button
         android:id="@+id/bt_fresco_listener"

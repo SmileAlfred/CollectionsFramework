@@ -64,8 +64,8 @@ public class PullToRefreshViewPagerActivity extends Activity implements OnRefres
 
 	static class SamplePagerAdapter extends PagerAdapter {
 
-		private static int[] sDrawables = { R.drawable.i_logo, R.drawable.i_logo, R.drawable.i_logo,
-				R.drawable.i_logo, R.drawable.i_logo, R.drawable.i_logo };
+		private static int[] sDrawables = { R.drawable.i_icon, R.drawable.i_icon, R.drawable.i_icon,
+				R.drawable.i_icon, R.drawable.i_icon, R.drawable.i_icon};
 
 		@Override
 		public int getCount() {

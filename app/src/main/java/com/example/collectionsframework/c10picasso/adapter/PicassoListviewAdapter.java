@@ -60,8 +60,8 @@ public class PicassoListviewAdapter extends BaseAdapter {
         // 加载图片
         Picasso.get()
                 .load(Constants.IMAGES[position])
-                .placeholder(R.drawable.i_logo)
-                .error(R.drawable.i_logo)
+                .placeholder(R.drawable.i_icon)
+                .error(R.drawable.i_icon)
                 .into(holder.iv);
 
         return convertView;

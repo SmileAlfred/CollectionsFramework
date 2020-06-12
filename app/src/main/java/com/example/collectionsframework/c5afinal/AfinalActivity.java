@@ -62,7 +62,7 @@ public class AfinalActivity extends FinalActivity {
         FinalBitmap finalBitmap = FinalBitmap.create(this);
 
         // 网络请求图片时默认显示的图片
-        finalBitmap.configLoadingImage(R.drawable.i_logo);
+        finalBitmap.configLoadingImage(R.drawable.i_icon);
 
         // 开始加载图片
         finalBitmap.display(iv_afinal,"https://profile.csdnimg.cn/B/8/7/3_liusaisaiv1");

@@ -12,7 +12,7 @@
         android:layout_height="120dp"
         android:layout_above="@+id/slogan"
         android:layout_centerHorizontal="true"
-        android:src="@drawable/i_logo" />
+        android:src="@drawable/i_icon" />
 
     <TextView
         android:id="@+id/slogan"

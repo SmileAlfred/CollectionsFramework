@@ -24,8 +24,8 @@ public class ImageloaderViewpagerAdapter extends PagerAdapter {
     private Context mContext;
     private final ImageLoader imageLoader;
     private DisplayImageOptions options = new DisplayImageOptions.Builder()
-            .showImageForEmptyUri(R.drawable.i_logo)  // 设置图片Uri为空或是错误的时候显示的图片
-            .showImageOnFail(R.drawable.i_logo)       // 设置图片加载或解码过程中发生错误显示的图片
+            .showImageForEmptyUri(R.drawable.i_icon)  // 设置图片Uri为空或是错误的时候显示的图片
+            .showImageOnFail(R.drawable.i_icon)       // 设置图片加载或解码过程中发生错误显示的图片
             .resetViewBeforeLoading(true)               // 设置图片在下载前是否重置，复位
             .cacheOnDisc(true)                          // 设置下载的图片是否缓存在SD卡中
             .imageScaleType(ImageScaleType.EXACTLY)     // 设置图片以如何的编码方式显示

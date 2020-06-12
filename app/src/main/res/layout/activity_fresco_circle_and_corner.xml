@@ -15,7 +15,7 @@
         android:layout_height="300dp"
         android:layout_marginTop="80dp"
         android:layout_gravity="center"
-        fresco:placeholderImage="@drawable/i_logo" />
+        fresco:placeholderImage="@drawable/i_icon" />
 
     <Button
         android:id="@+id/bt_fresco_circle"

@@ -181,7 +181,7 @@ public class VolleyActivity extends Activity implements View.OnClickListener {
                 }, 0, 0, Bitmap.Config.RGB_565, new Response.ErrorListener() {
                     @Override
                     public void onErrorResponse(VolleyError volleyError) {
-                        iv_volley_result.setImageResource(R.drawable.i_logo);
+                        iv_volley_result.setImageResource(R.drawable.i_icon);
                     }
                 });
 
@@ -213,7 +213,7 @@ public class VolleyActivity extends Activity implements View.OnClickListener {
                 // 加载图片
                 url = "http://img5.mtime.cn/mg/2019/06/15/103753.65527244_120X90X4.jpg";
                 iv_volley_result.setVisibility(View.VISIBLE);
-                ImageLoader.ImageListener imageListener = ImageLoader.getImageListener(iv_volley_result, R.drawable.i_logo, R.drawable.i_logo);
+                ImageLoader.ImageListener imageListener = ImageLoader.getImageListener(iv_volley_result, R.drawable.i_icon, R.drawable.i_icon);
                 imageLoader.get(url, imageListener);
                 break;
             // networkimageview加载图片
@@ -229,8 +229,8 @@ public class VolleyActivity extends Activity implements View.OnClickListener {
                 imageLoader = new ImageLoader(requestQueue, new BitmapCache());
 
                 // 默认图片和异常图片设置
-                iv_volley_networkimagview.setDefaultImageResId(R.drawable.i_logo);
-                iv_volley_networkimagview.setErrorImageResId(R.drawable.i_logo);
+                iv_volley_networkimagview.setDefaultImageResId(R.drawable.i_icon);
+                iv_volley_networkimagview.setErrorImageResId(R.drawable.i_icon);
 
                 // 加载图片
                 url = "http://img5.mtime.cn/mg/2019/06/15/103753.65527244_120X90X4.jpg";

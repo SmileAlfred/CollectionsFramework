@@ -67,7 +67,7 @@ public class FrescoMultiActivity extends Activity {
     void bt_fresco_thumbnailImg_click(View view){
 
         // 图片地址
-        Uri uri = Uri.fromFile(new File(getFilesDir() +"/i_logo.jpg"));
+        Uri uri = Uri.fromFile(new File(getFilesDir() +"/i_icon.jpg"));
         // 加载图片的请求
         ImageRequest request = ImageRequestBuilder.newBuilderWithSource(uri)
                 .setLocalThumbnailPreviewsEnabled(true)
@@ -91,7 +91,7 @@ public class FrescoMultiActivity extends Activity {
         //本地准备复用图片的uri  如果本地这个图片不存在，会自动去加载下一个uri
 
         // 请求加载图片
-        Uri uri1 = Uri.fromFile(new File(getFilesDir()+"/i_logo.jpg"));
+        Uri uri1 = Uri.fromFile(new File(getFilesDir()+"/i_icon.jpg"));
         //图片的网络uri
         Uri uri2 = Uri.parse("http://c.hiphotos.baidu.com/image/pic/item/962bd40735fae6cd21a519680db30f2442a70fa1.jpg");
 

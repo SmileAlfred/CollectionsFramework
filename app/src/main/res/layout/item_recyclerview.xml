@@ -19,7 +19,7 @@
             android:layout_marginLeft="50dp"
             android:layout_width="45dp"
             android:layout_height="45dp"
-            android:src="@drawable/i_logo" />
+            android:src="@drawable/i_icon" />
 
         <TextView
             android:id="@+id/tv_title"

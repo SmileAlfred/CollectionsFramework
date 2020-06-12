@@ -14,7 +14,7 @@
         android:layout_height="300dp"
         android:layout_marginTop="48dp"
         android:background="@android:color/black"
-        fresco:placeholderImage="@drawable/i_logo" />
+        fresco:placeholderImage="@drawable/i_icon" />
 
     <TextView
         android:id="@+id/tv_fresco_explain"

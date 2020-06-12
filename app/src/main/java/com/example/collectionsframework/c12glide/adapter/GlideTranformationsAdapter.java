@@ -51,7 +51,7 @@ public class GlideTranformationsAdapter extends RecyclerView.Adapter<GlideTranfo
 
     public GlideTranformationsAdapter(Context context) {
         mContext = context;
-        for (int i = 1; i <= 21; i++) {
+        for (int i = 1; i <= 11; i++) {
             mData.add(i + "");
         }
     }
@@ -145,66 +145,68 @@ public class GlideTranformationsAdapter extends RecyclerView.Adapter<GlideTranfo
                         .transform(new BlurTransformation(25))
                         .into(holder.image);
                 break;
-            // case 12:
+            /**
+             * 以下，.transform()中的动画类出错；
+             */
+            //case 12:
+            //   Glide.with(mContext)
+            //           .load(R.drawable.demo)
+            //           .transform(new ToonFilterTransformation(2.0f,10.f))
+            //           .into(holder.image);
+            //   break;
+            // case 13:
             //     Glide.with(mContext)
-            //             .load(R.drawable.demo)
-            //             .transform(new ToonFilterTransformation(2.0f,10.f))
+            //             .load(R.drawable.check)
+            //             .transform(new SepiaFilterTransformation())
             //             .into(holder.image);
             //     break;
-            case 13:
-                Glide.with(mContext)
-                        .load(R.drawable.check)
-                        .transform(new SepiaFilterTransformation())
-                        .into(holder.image);
-                break;
-            case 14:
-                Glide.with(mContext)
-                        .load(R.drawable.check)
-                        .transform(new ContrastFilterTransformation(2.0f))
-                        .into(holder.image);
-                break;
-            case 15:
-                Glide.with(mContext)
-                        .load(R.drawable.check)
-                        .transform(new InvertFilterTransformation())
-                        .into(holder.image);
-                break;
-            case 16:
-                Glide.with(mContext)
-                        .load(R.drawable.check)
-                        .transform(new PixelationFilterTransformation(20))
-                        .into(holder.image);
-                break;
-            case 17:
-                Glide.with(mContext)
-                        .load(R.drawable.check)
-                        .transform(new SketchFilterTransformation())
-                        .into(holder.image);
-                break;
-            case 18:
-                Glide.with(mContext)
-                        .load(R.drawable.check)
-                        .transform(new SwirlFilterTransformation(0.5f, 1.0f, new PointF(0.5f, 0.5f)))
-                        .into(holder.image);
-                break;
-            case 19:
-                Glide.with(mContext)
-                        .load(R.drawable.check)
-                        .transform(new BrightnessFilterTransformation(0.5f))
-                        .into(holder.image);
-                break;
-            case 20:
-                Glide.with(mContext)
-                        .load(R.drawable.check)
-                        .transform(new KuwaharaFilterTransformation(25))
-                        .into(holder.image);
-                break;
-            case 21:
-                Glide.with(mContext)
-                        .load(R.drawable.check)
-                        .transform(new VignetteFilterTransformation(new PointF(0.5f, 0.5f), new float[]{0.0f, 0.0f, 0.0f}, 0f, 0.75f))
-                        .into(holder.image);
-                break;
+            // case 14:
+            //     Glide.with(mContext)
+            //             .load(R.drawable.check)
+            //             .transform(new ContrastFilterTransformation(2.0f))
+            //             .into(holder.image);
+            //     break;
+            // case 15:
+            //     Glide.with(mContext)
+            //             .load(R.drawable.check)
+            //             .transform(new InvertFilterTransformation())
+            //             .into(holder.image);
+            //     break;
+            // case 16:
+            //     Glide.with(mContext)
+            //             .load(R.drawable.check)
+            //             .transform(new PixelationFilterTransformation(20))
+            //             .into(holder.image);
+            //     break;
+            // case 17:
+            //     Glide.with(mContext)
+            //             .load(R.drawable.check)
+            //             .transform(new SketchFilterTransformation())
+            //             .into(holder.image);
+            //     break;
+            // case 18:
+            //     Glide.with(mContext)
+            //             .load(R.drawable.check)
+            //             .transform(new SwirlFilterTransformation(0.5f, 1.0f, new PointF(0.5f, 0.5f)))
+            //             .into(holder.image);
+            //     break;
+            // case 19:
+            //     Glide.with(mContext)
+            //             .load(R.drawable.check)
+            //             .transform(new BrightnessFilterTransformation(0.5f))
+            //             .into(holder.image);
+            //     break;
+            // case 20:
+            //     Glide.with(mContext)
+            //             .load(R.drawable.check)
+            //             .transform(new KuwaharaFilterTransformation(25))
+            //             .into(holder.image);
+            //     break;
+            // case 21:
+            //     Glide.with(mContext)
+            //             .load(R.drawable.check)
+            //             .transform(new VignetteFilterTransformation(new PointF(0.5f, 0.5f), new float[]{0.0f, 0.0f, 0.0f}, 0f, 0.75f))
+            //             .into(holder.image);
             default:
                 break;
         }

@@ -18,8 +18,6 @@ import java.io.File;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-import static java.lang.System.load;
-
 public class GlideBaseActivity extends Activity {
 
     @BindView(R.id.tv_title)
@@ -80,11 +78,11 @@ public class GlideBaseActivity extends Activity {
 
         //（2）加载资源图片
         tvGlide2.setText("（2）加载资源图片");
-        Glide.with(this).load(R.drawable.i_logo).into(ivGlide2);
+        Glide.with(this).load(R.drawable.i_icon).into(ivGlide2);
 
         //（3）加载本地图片
         tvGlide3.setText("（3）加载本地图片");
-        String path = getFilesDir() + "/i_logo.jpg";
+        String path = getFilesDir() + "/i_icon.jpg";
         File file = new File(path);
         Uri uri = Uri.fromFile(file);
         Glide.with(this).load(uri).into(ivGlide3);
@@ -100,7 +98,7 @@ public class GlideBaseActivity extends Activity {
 
         //（6）加载本地gif
         tvGlide6.setText("（6）加载本地gif");
-        String gifPath = getFilesDir() + "/i_logo.gif";
+        String gifPath = getFilesDir() + "/i_icon.gif";
         File gifFile = new File(gifPath);
         Glide.with(this).load(gifFile).placeholder(R.mipmap.ic_launcher).into(ivGlide6);
 
@@ -113,7 +111,7 @@ public class GlideBaseActivity extends Activity {
 
         //（8）设置缩略图比例,然后，先加载缩略图，再加载原图
         tvGlide8.setText("（8）设置缩略图比例,然后，先加载缩略图，再加载原图");
-        String urlPath = getFilesDir() + "/i_logo.jpg";
+        String urlPath = getFilesDir() + "/i_icon.jpg";
         Glide.with(this).load(new File(urlPath)).thumbnail(0.1f).centerCrop().placeholder(R.mipmap.ic_launcher).into(ivGlide8);
 
         //（9）先建立一个缩略图对象，然后，先加载缩略图，再加载原图

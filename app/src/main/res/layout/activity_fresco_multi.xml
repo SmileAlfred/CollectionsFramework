@@ -28,7 +28,7 @@
                 android:layout_gravity="center"
                 android:layout_marginTop="48dp"
                 android:background="#fff"
-                fresco:placeholderImage="@drawable/i_logo" />
+                fresco:placeholderImage="@drawable/i_icon" />
             <TextView
                 android:layout_width="match_parent"
                 android:id="@+id/multi_desc"

@@ -9,7 +9,7 @@ import com.nostra13.universalimageloader.cache.disc.naming.Md5FileNameGenerator;
 import com.nostra13.universalimageloader.core.ImageLoader;
 import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;
 import com.nostra13.universalimageloader.core.assist.QueueProcessingType;
-import com.zxy.recovery.core.Recovery;
+//import com.zxy.recovery.core.Recovery;
 
 import org.xutils.x;
 
@@ -21,10 +21,11 @@ import java.util.List;
  * 作用：代表整个软件
  */
 public class MyApplication extends Application {
-    public static List<?> images=new ArrayList<>();
-    public static List<String> titles=new ArrayList<>();
+    public static List<?> images = new ArrayList<>();
+    public static List<String> titles = new ArrayList<>();
     //屏幕的高
     public static int H;
+
     @Override
     public void onCreate() {
         super.onCreate();
@@ -41,28 +42,30 @@ public class MyApplication extends Application {
         initBanner();
 
     }
+
     private void initBanner() {
-        H=getScreenH(this);
+        H = getScreenH(this);
         Fresco.initialize(this);
 
-        //让软件状态还原的框架
-        Recovery.getInstance()
-                .debug(true)
-                .recoverInBackground(false)
-                .recoverStack(true)
-                .mainPage(MainActivity.class)
-                .init(this);
+        //当软件出现BUG时，自动状态还原的框架——开发时不用
+        //Recovery.getInstance()
+        //        .debug(true)
+        //        .recoverInBackground(false)
+        //        .recoverStack(true)
+        //        .mainPage(MainActivity.class)
+        //        .init(this);
 
 
         String[] urls = getResources().getStringArray(R.array.url4);
         String[] tips = getResources().getStringArray(R.array.title);
         List list = Arrays.asList(urls);
         images = new ArrayList(list);
-        titles= Arrays.asList(tips);
+        titles = Arrays.asList(tips);
     }
 
     /**
      * 得到屏幕的高
+     *
      * @param aty
      * @return
      */
@@ -70,6 +73,7 @@ public class MyApplication extends Application {
         DisplayMetrics dm = aty.getResources().getDisplayMetrics();
         return dm.heightPixels;
     }
+
     private void initFresco() {
         Fresco.initialize(this);
     }
