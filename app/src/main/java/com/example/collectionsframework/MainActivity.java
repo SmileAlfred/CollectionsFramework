@@ -22,7 +22,7 @@ import java.util.List;
  * QQ号：541433511
  * 作用：主页面
  */
-public class MainActivity extends FragmentActivity {
+public class   MainActivity extends FragmentActivity {
 
     private RadioGroup mRg_main;
     private List<BaseFragment> mBaseFragment;

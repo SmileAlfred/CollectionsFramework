@@ -127,6 +127,9 @@
         <activity
             android:name=".c19opendanmaku.activity.OpenDanmakuMainActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".c20tablayout.activity.TabLayoutMainActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
 
     </application>
 </manifest>

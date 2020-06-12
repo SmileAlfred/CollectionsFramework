@@ -33,6 +33,5 @@
             android:text="注：这是动态的添加simpleDraweeView；这里反复添加会报错，所以你就别点了，因为我已经处理了"
             android:visibility="gone"
             android:textColor="#000"/>
-
     </LinearLayout>
 </LinearLayout>

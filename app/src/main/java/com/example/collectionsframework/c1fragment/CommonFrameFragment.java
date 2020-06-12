@@ -17,6 +17,7 @@ import com.example.collectionsframework.c16jiecaovideoplayer.activity.JieCaoVide
 import com.example.collectionsframework.c17banner.activity.BannerMainActivity;
 import com.example.collectionsframework.c18countdownview.CountdownViewMainActivity;
 import com.example.collectionsframework.c19opendanmaku.activity.OpenDanmakuMainActivity;
+import com.example.collectionsframework.c20tablayout.activity.TabLayoutMainActivity;
 import com.example.collectionsframework.c2okhttp.activity.OKHttpActivity;
 import com.example.collectionsframework.c2okhttp.base.BaseFragment;
 import com.example.collectionsframework.c3json.activity.FastJsonActivity;
@@ -127,8 +128,7 @@ public class CommonFrameFragment extends BaseFragment implements View.OnClickLis
         datas = new String[]{"OKHttp", "NativeJsonPrase", "Gson", "FastJson", "xUtils3"
                 , "Afinal", "Volley", "EventBus", "ButterKnife", "ImageLoader", "Picasso"
                 , "RecyclerView", "Glide", "Fresco", "PullToRefresh", "UniversalVideoView"
-                , "JCVideoPlayer", "Banner", "CountdownView", "OpenDanmaku", "Retrofit2"
-                , "greenDao", "RxJava", "Expandablelistview", "更多"};
+                , "JCVideoPlayer", "Banner", "CountdownView", "OpenDanmaku", "TabLayout", "更多"};
         mTextViews.add(item1);
         mTextViews.add(item2);
         mTextViews.add(item3);
@@ -246,6 +246,9 @@ public class CommonFrameFragment extends BaseFragment implements View.OnClickLis
                 break;
             case "opendanmaku":
                 intent = new Intent(mContext, OpenDanmakuMainActivity.class);
+                break;
+            case "tablayout":
+                intent = new Intent(mContext, TabLayoutMainActivity.class);
                 break;
             default:
                 break;

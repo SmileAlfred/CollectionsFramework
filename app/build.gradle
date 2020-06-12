@@ -14,6 +14,9 @@ android {
         versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        //导入其他库报错："Cannot fit requested classes in a single dex file (# methods: 66606 > 65536)"
+        multiDexEnabled true
     }
 
     buildTypes {
@@ -40,6 +43,8 @@ dependencies {
     implementation project(path: ':jcvideoplayer-lib')
     implementation project(path: ':CountdownView-library')
     implementation project(path: ':opendanmaku-library')
+    //noinspection GradleCompatible
+    implementation 'com.android.support:design:28.0.0'
     annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
     implementation 'com.github.bumptech.glide:glide:4.11.0'
     // If you want to use the GPU Filters
