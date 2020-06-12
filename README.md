@@ -176,6 +176,15 @@ Android常用基础框架、技术汇总；
 2. 地址：https://github.com/linsea/UniversalVideoView
 3. 在API22出现播放不了；23可以
 
+# 十六、节操播放器
+1. 已经导入并优化、净化老版本的；新版本在：https://github.com/lipangit/JiaoZiVideoPlayer (还没有看）；
+2. 实现小窗口播放；
+3. 实现在ListView中播放视频；
+4. 实现在ViewPager的ListView中播放视频；
+5. 实现分类型的ListView中播放视频；
+6. 实现RecyclerView中播放视频。
+7. 可以自定义播放器UI；
+8. 可以在WebView中播放视频；
 
 
 
