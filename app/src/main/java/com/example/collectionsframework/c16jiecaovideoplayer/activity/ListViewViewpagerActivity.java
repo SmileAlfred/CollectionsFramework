@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.PagerAdapter;
@@ -18,16 +19,14 @@ import java.util.List;
 import fm.jiecao.jcvideoplayer_lib.JCVideoPlayer;
 
 public class ListViewViewpagerActivity extends AppCompatActivity implements ViewPager.OnPageChangeListener {
+    private TextView tvTitle;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_listview_viewpager);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        getSupportActionBar().setDisplayShowHomeEnabled(true);
-        getSupportActionBar().setDisplayShowTitleEnabled(true);
-        getSupportActionBar().setDisplayUseLogoEnabled(false);
-        getSupportActionBar().setTitle("ViewPagerAndListView");
 
+        tvTitle = findViewById(R.id.tv_title);
+        tvTitle.setText("多个ListView组成的ViewPager");
         List<View> listViews = new ArrayList<>();
         ListView listView1 = (ListView) getLayoutInflater().inflate(R.layout.layout_list, null);
         ListView listView2 = (ListView) getLayoutInflater().inflate(R.layout.layout_list, null);

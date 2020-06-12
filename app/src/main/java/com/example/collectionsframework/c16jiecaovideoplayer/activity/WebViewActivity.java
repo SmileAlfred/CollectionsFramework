@@ -6,6 +6,7 @@ import android.view.ViewGroup;
 import android.webkit.JavascriptInterface;
 import android.webkit.WebView;
 import android.widget.AbsoluteLayout;
+import android.widget.TextView;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
@@ -23,17 +24,15 @@ import fm.jiecao.jcvideoplayer_lib.JCVideoPlayerStandard;
 
 public class WebViewActivity extends AppCompatActivity {
     WebView mWebView;
+    TextView tvTitle;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        getSupportActionBar().setDisplayShowHomeEnabled(true);
-        getSupportActionBar().setDisplayShowTitleEnabled(true);
-        getSupportActionBar().setDisplayUseLogoEnabled(false);
-        getSupportActionBar().setTitle("AboutWebView");
         setContentView(R.layout.activity_webview);
         mWebView = (WebView) findViewById(R.id.webview);
+        tvTitle = findViewById(R.id.tv_title);
+        tvTitle.setText("WebView中播放视频");
         //设置值JavaScript
         mWebView.getSettings().setJavaScriptEnabled(true);
         //添加JavascriptInterface

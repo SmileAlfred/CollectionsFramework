@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
@@ -17,27 +18,31 @@ import com.example.collectionsframework.R;
  */
 public class ListViewActivity extends AppCompatActivity implements View.OnClickListener {
     Button mNormalList, mViewPagerList, mMultiHolderList, mRecyleView;
+    private TextView tvTitle;
+
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        getSupportActionBar().setDisplayShowHomeEnabled(true);
-        getSupportActionBar().setDisplayShowTitleEnabled(true);
-        getSupportActionBar().setDisplayUseLogoEnabled(false);
-        getSupportActionBar().setTitle("About ListView");
         setContentView(R.layout.activity_listview);
 
         mNormalList = (Button) findViewById(R.id.normal_list);
         mViewPagerList = (Button) findViewById(R.id.viewpayer_list);
         mMultiHolderList = (Button) findViewById(R.id.multi_holder_list);
         mRecyleView = (Button) findViewById(R.id.recyleview);
+        tvTitle = findViewById(R.id.tv_title);
 
         mNormalList.setOnClickListener(this);
         mViewPagerList.setOnClickListener(this);
         mMultiHolderList.setOnClickListener(this);
         mRecyleView.setOnClickListener(this);
 
+        initData();
+    }
+
+    private void initData() {
+        // 标题
+        tvTitle.setText("在列表中播放视频");
     }
 
     @Override

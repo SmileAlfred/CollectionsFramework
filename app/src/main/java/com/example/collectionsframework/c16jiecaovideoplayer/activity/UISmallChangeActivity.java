@@ -2,6 +2,7 @@ package com.example.collectionsframework.c16jiecaovideoplayer.activity;
 
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.widget.TextView;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
@@ -16,6 +17,7 @@ import com.squareup.picasso.Picasso;
 import fm.jiecao.jcvideoplayer_lib.JCVideoPlayer;
 
 public class UISmallChangeActivity extends AppCompatActivity {
+    private TextView tvTitle;
     JCVideoPlayerStandardShowShareButtonAfterFullscreen jcVideoPlayerStandardWithShareButton;
     JCVideoPlayerStandardShowTitleAfterFullscreen jcVideoPlayerStandardShowTitleAfterFullscreen;
     JCVideoPlayerStandardShowTextureViewAfterAutoComplete jcVideoPlayerStandardShowTextureViewAfterAutoComplete;
@@ -24,13 +26,9 @@ public class UISmallChangeActivity extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        getSupportActionBar().setDisplayShowHomeEnabled(true);
-        getSupportActionBar().setDisplayShowTitleEnabled(true);
-        getSupportActionBar().setDisplayUseLogoEnabled(false);
-        getSupportActionBar().setTitle("SmallChangeUI");
         setContentView(R.layout.activity_ui_small_change);
-
+        tvTitle = findViewById(R.id.tv_title);
+        tvTitle.setText("修改播放器UI");
         jcVideoPlayerStandardWithShareButton = (JCVideoPlayerStandardShowShareButtonAfterFullscreen) findViewById(R.id.custom_videoplayer_standard_with_share_button);
         jcVideoPlayerStandardWithShareButton.setUp("http://vfx.mtime.cn/Video/2019/06/28/mp4/190628075308350550.mp4", JCVideoPlayer.SCREEN_LAYOUT_NORMAL
                 , "霹雳娇娃 首款预告片");

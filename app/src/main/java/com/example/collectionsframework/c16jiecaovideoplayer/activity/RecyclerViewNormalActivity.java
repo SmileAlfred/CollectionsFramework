@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
@@ -19,20 +20,18 @@ import fm.jiecao.jcvideoplayer_lib.JCVideoPlayerManager;
 public class RecyclerViewNormalActivity extends AppCompatActivity {
     RecyclerView recyclerView;
     RecyclerViewVideoAdapter adapterVideoList;
+    TextView tvTitle;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        getSupportActionBar().setDisplayShowHomeEnabled(true);
-        getSupportActionBar().setDisplayShowTitleEnabled(true);
-        getSupportActionBar().setDisplayUseLogoEnabled(false);
-        getSupportActionBar().setTitle("NormalRecyclerView");
         //加载布局和实例化
         setContentView(R.layout.activity_recyclerview_content);
 
         recyclerView = (RecyclerView) findViewById(R.id.recyclerview);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
+        tvTitle = findViewById(R.id.tv_title);
+        tvTitle.setText("RecyclerView中使用");
 
         //创建适配器
         adapterVideoList = new RecyclerViewVideoAdapter(this);

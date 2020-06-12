@@ -22,21 +22,23 @@ import fm.jiecao.jcvideoplayer_lib.JCVideoPlayerStandard;
 public class ListViewMultiHolderActivity extends AppCompatActivity {
     ListView listView;
     VideoListAdapter mAdapter;
+    private TextView tvTitle;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_listview_content);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        getSupportActionBar().setDisplayShowHomeEnabled(true);
-        getSupportActionBar().setDisplayShowTitleEnabled(true);
-        getSupportActionBar().setDisplayUseLogoEnabled(false);
-        getSupportActionBar().setTitle("MultiHolderListView");
-
 
         listView = (ListView) findViewById(R.id.listview);
+        tvTitle = findViewById(R.id.tv_title);
         mAdapter = new VideoListAdapter(this);
         listView.setAdapter(mAdapter);
+        initData();
+    }
+
+    private void initData() {
+        // 标题
+        tvTitle.setText("分类型的ListView中播放视频");
     }
 
 

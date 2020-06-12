@@ -4,7 +4,7 @@
     android:background="#fff"
     android:layout_height="match_parent"
     android:orientation="vertical">
-
+<include layout="@layout/titlebar"/>
     <ListView
         android:id="@+id/listview"
         android:layout_width="match_parent"

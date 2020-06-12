@@ -5,6 +5,7 @@ import android.hardware.SensorManager;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
@@ -20,21 +21,19 @@ public class ListViewNormalActivity extends AppCompatActivity {
 
     SensorManager sensorManager;
     JCVideoPlayer.JCAutoFullscreenListener sensorEventListener;
+    private TextView tvTitle;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        getSupportActionBar().setDisplayShowHomeEnabled(true);
-        getSupportActionBar().setDisplayShowTitleEnabled(true);
-        getSupportActionBar().setDisplayUseLogoEnabled(false);
-        getSupportActionBar().setTitle("NormalListView");
         setContentView(R.layout.activity_listview_content);
 
         listView = (ListView) findViewById(R.id.listview);
         adapterVideoList = new VideoListAdapter(this);
         listView.setAdapter(adapterVideoList);
 
+        tvTitle = findViewById(R.id.tv_title);
+        tvTitle.setText("普通的ListView");
         sensorManager = (SensorManager) getSystemService(SENSOR_SERVICE);
         sensorEventListener = new JCVideoPlayer.JCAutoFullscreenListener();
     }

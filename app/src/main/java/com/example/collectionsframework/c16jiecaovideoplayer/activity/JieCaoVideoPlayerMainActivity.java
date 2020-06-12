@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -35,7 +36,7 @@ public class JieCaoVideoPlayerMainActivity extends AppCompatActivity implements 
     JCVideoPlayerSimple mJcVideoPlayerSimple;
 
     Button mTinyWindow, mAutoTinyWindow, mAboutListView, mAboutUI, mPlayDirectly, mAboutWebView;
-
+    private TextView tvTitle;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,6 +50,7 @@ public class JieCaoVideoPlayerMainActivity extends AppCompatActivity implements 
         mAboutListView = (Button) findViewById(R.id.about_listview);
         mPlayDirectly = (Button) findViewById(R.id.about_ui);
         mAboutWebView = (Button) findViewById(R.id.about_webview);
+        tvTitle = (TextView) findViewById(R.id.tv_title);
 
         mTinyWindow.setOnClickListener(this);
         mAutoTinyWindow.setOnClickListener(this);
@@ -56,6 +58,7 @@ public class JieCaoVideoPlayerMainActivity extends AppCompatActivity implements 
         mAboutUI.setOnClickListener(this);
         mPlayDirectly.setOnClickListener(this);
         mAboutWebView.setOnClickListener(this);
+
 
         mJcVideoPlayerSimple = (JCVideoPlayerSimple) findViewById(R.id.simple_demo);
         mJcVideoPlayerSimple.setUp("http://vfx.mtime.cn/Video/2019/06/29/mp4/190629004821240734.mp4"
@@ -79,6 +82,12 @@ public class JieCaoVideoPlayerMainActivity extends AppCompatActivity implements 
         JCVideoPlayer.setJcUserAction(new MyUserActionStandard());
         mSensorManager = (SensorManager) getSystemService(SENSOR_SERVICE);
         mSensorEventListener = new JCVideoPlayer.JCAutoFullscreenListener();
+        initData();
+    }
+
+    private void initData() {
+        // 标题
+        tvTitle.setText("JCVideoPlayer");
     }
 
 

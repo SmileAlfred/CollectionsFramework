@@ -71,28 +71,43 @@
         <activity
             android:name=".c15universalvideoview.UniversalVideoViewActivity"
             android:configChanges="keyboardHidden|screenSize|orientation" />
-        <activity android:name=".c16jiecaovideoplayer.activity.JieCaoVideoPlayerMainActivity"
+        <activity
+            android:name=".c16jiecaovideoplayer.activity.JieCaoVideoPlayerMainActivity"
             android:configChanges="orientation|screenSize|keyboardHidden"
             android:screenOrientation="portrait"
-            android:theme="@style/JieCaoVideoPlayerTheme"/>
-        <activity android:name=".c16jiecaovideoplayer.activity.ListViewActivity" />
-        <activity android:name=".c16jiecaovideoplayer.activity.ListViewMultiHolderActivity"
+            android:theme="@style/JieCaoVideoPlayerTheme" />
+        <activity
+            android:name=".c16jiecaovideoplayer.activity.ListViewActivity"
+            android:theme="@style/JieCaoVideoPlayerTheme" />
+        <activity
+            android:name=".c16jiecaovideoplayer.activity.ListViewMultiHolderActivity"
             android:configChanges="orientation|screenSize|keyboardHidden"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".c16jiecaovideoplayer.activity.ListViewNormalActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/JieCaoVideoPlayerTheme" />
+        <activity
+            android:name=".c16jiecaovideoplayer.activity.ListViewNormalActivity"
             android:configChanges="orientation|screenSize|keyboardHidden"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".c16jiecaovideoplayer.activity.ListViewViewpagerActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/JieCaoVideoPlayerTheme" />
+        <activity
+            android:name=".c16jiecaovideoplayer.activity.ListViewViewpagerActivity"
             android:configChanges="orientation|screenSize|keyboardHidden"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".c16jiecaovideoplayer.activity.RecyclerViewNormalActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/JieCaoVideoPlayerTheme" />
+        <activity
+            android:name=".c16jiecaovideoplayer.activity.RecyclerViewNormalActivity"
             android:configChanges="orientation|screenSize|keyboardHidden"
-            android:screenOrientation="portrait" />
-        <activity android:name=".c16jiecaovideoplayer.activity.UISmallChangeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/JieCaoVideoPlayerTheme" />
+        <activity
+            android:name=".c16jiecaovideoplayer.activity.UISmallChangeActivity"
             android:configChanges="orientation|screenSize|keyboardHidden"
-            android:screenOrientation="portrait" />
-        <activity android:name=".c16jiecaovideoplayer.activity.WebViewActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/JieCaoVideoPlayerTheme" />
+        <activity
+            android:name=".c16jiecaovideoplayer.activity.WebViewActivity"
             android:configChanges="orientation|screenSize|keyboardHidden"
-            android:screenOrientation="portrait"/>
+            android:screenOrientation="portrait"
+            android:theme="@style/JieCaoVideoPlayerTheme" />
     </application>
 </manifest>
