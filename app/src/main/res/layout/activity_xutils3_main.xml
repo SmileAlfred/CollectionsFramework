@@ -38,7 +38,7 @@
         android:layout_height="wrap_content"
         android:background="#fff"
         android:layout_margin="5dp"
-        android:text="xUtils3加载单张图片"
+        android:text="xUtils3加载单张图片/Gif"
         android:textAllCaps="false" />
 
     <Button
@@ -50,5 +50,16 @@
         android:layout_height="wrap_content"
         android:text="xUtils3加载列表图片"
         android:textAllCaps="false" />
+    <TextView
+        android:id="@+id/tv_load_list_image_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="#000"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:padding="8dp"
+        android:visibility="gone"
+        android:text="注：加载列表图片可以参考其他几个框架，主要方法在getView()中进行"/>
 
 </LinearLayout>

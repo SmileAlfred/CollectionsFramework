@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.collectionsframework">
@@ -14,9 +15,13 @@
         android:roundIcon="@mipmap/i_logo_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".c4xutils3.loadsingleimage.XUtils3LoadSingleImage"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+
         <activity android:name=".LauncherActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -109,7 +114,6 @@
             android:configChanges="orientation|screenSize|keyboardHidden"
             android:screenOrientation="portrait"
             android:theme="@style/JieCaoVideoPlayerTheme" />
-
         <activity
             android:name=".c17banner.activity.BannerMainActivity"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
@@ -117,7 +121,6 @@
         <activity android:name=".c17banner.activity.BannerStyleActivity" />
         <activity android:name=".c17banner.activity.CustomBannerActivity" />
         <activity android:name=".c17banner.activity.IndicatorPositionActivity" />
-
         <activity
             android:name=".c18countdownview.CountdownViewMainActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
@@ -130,6 +133,6 @@
         <activity
             android:name=".c20tablayout.activity.TabLayoutMainActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
-
     </application>
+
 </manifest>

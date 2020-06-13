@@ -9,6 +9,7 @@ import android.widget.Toast;
 
 import com.example.collectionsframework.R;
 import com.example.collectionsframework.c4xutils3.annotation.FragmentXUtils3Activity;
+import com.example.collectionsframework.c4xutils3.loadsingleimage.XUtils3LoadSingleImage;
 import com.example.collectionsframework.c4xutils3.net.XUtils3NetActivity;
 
 import org.xutils.view.annotation.ContentView;
@@ -26,6 +27,8 @@ public class XUtils3MainActivity extends Activity {
 
     @ViewInject(R.id.tv_title)
     private TextView textView;
+    @ViewInject(R.id.tv_load_list_image_desc)
+    private TextView tv_load_list_image_desc;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -53,10 +56,10 @@ public class XUtils3MainActivity extends Activity {
                 intent = new Intent(XUtils3MainActivity.this, XUtils3NetActivity.class);
                 break;
             case R.id.btn_image:
-                Toast.makeText(XUtils3MainActivity.this, "加载单张图片未实现", Toast.LENGTH_SHORT).show();
+                intent = new Intent(XUtils3MainActivity.this, XUtils3LoadSingleImage.class);
                 break;
             case R.id.btn_image_list:
-                Toast.makeText(XUtils3MainActivity.this, "加载列表图片未实现", Toast.LENGTH_SHORT).show();
+                tv_load_list_image_desc.setVisibility(View.VISIBLE);
                 break;
             default:
                 break;

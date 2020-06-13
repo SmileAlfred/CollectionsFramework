@@ -38,6 +38,7 @@ public class OKHttpListActivity  extends Activity{
     private ListView listView;
     private ProgressBar progressBar;
     private TextView tv_nodata;
+    private TextView tv_title;
     private OKHttpListAdapter adapter;
     private String url;
 
@@ -68,8 +69,10 @@ public class OKHttpListActivity  extends Activity{
     private void initView() {
         setContentView(R.layout.activity_okhttplist);
         tv_nodata = (TextView) findViewById(R.id.tv_nodata);
+        tv_title = (TextView) findViewById(R.id.tv_title);
         listView = (ListView) findViewById(R.id.listview);
         progressBar = (ProgressBar) findViewById(R.id.progressBar);
+        tv_title.setText("使用OkHttp-Utils加载l里表中的图片");
     }
 
 
