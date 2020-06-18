@@ -2,9 +2,7 @@ package com.example.collectionsframework.c3json.bean;
 
 import java.util.List;
 
-/**
- * Created by Administrator on 2016/8/27 0027.
- */
+
 public class DataInfo {
 
     /**

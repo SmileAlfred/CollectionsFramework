@@ -12,10 +12,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.collectionsframework.R;
 
-
-/**
- * Created by Nathen on 16/7/31.
- */
 public class ListViewActivity extends AppCompatActivity implements View.OnClickListener {
     Button mNormalList, mViewPagerList, mMultiHolderList, mRecyleView;
     private TextView tvTitle;

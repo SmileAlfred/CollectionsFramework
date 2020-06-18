@@ -15,10 +15,6 @@ import com.nostra13.universalimageloader.core.DisplayImageOptions;
 import com.nostra13.universalimageloader.core.ImageLoader;
 import com.nostra13.universalimageloader.core.assist.ImageScaleType;
 import com.nostra13.universalimageloader.core.display.FadeInBitmapDisplayer;
-
-/**
- * Created by Administrator on 2016/10/14.
- */
 public class ImageloaderViewpagerAdapter extends PagerAdapter {
 
     private Context mContext;

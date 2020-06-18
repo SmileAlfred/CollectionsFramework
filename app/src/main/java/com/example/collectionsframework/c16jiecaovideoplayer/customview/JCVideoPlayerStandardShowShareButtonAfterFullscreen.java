@@ -11,10 +11,6 @@ import com.example.collectionsframework.R;
 
 import fm.jiecao.jcvideoplayer_lib.JCVideoPlayerStandard;
 
-/**
- * Created by Nathen
- * On 2016/04/22 00:54
- */
 public class JCVideoPlayerStandardShowShareButtonAfterFullscreen extends JCVideoPlayerStandard {
 
     public ImageView shareButton;

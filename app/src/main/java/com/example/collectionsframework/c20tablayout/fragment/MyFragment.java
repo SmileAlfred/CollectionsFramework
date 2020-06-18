@@ -12,12 +12,6 @@ import android.widget.TextView;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
-/**
- * 作者：尚硅谷-杨光福 on 2016/12/25 17:01
- * 微信：yangguangfu520
- * QQ号：541433511
- * 作用：MyFragment
- */
 public class MyFragment extends Fragment {
 
     /**

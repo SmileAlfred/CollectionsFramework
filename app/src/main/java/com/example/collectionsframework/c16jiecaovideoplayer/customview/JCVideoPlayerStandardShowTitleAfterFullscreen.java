@@ -6,10 +6,6 @@ import android.view.View;
 
 import fm.jiecao.jcvideoplayer_lib.JCVideoPlayerStandard;
 
-/**
- * Created by Nathen
- * On 2016/04/27 10:49
- */
 public class JCVideoPlayerStandardShowTitleAfterFullscreen extends JCVideoPlayerStandard {
     public JCVideoPlayerStandardShowTitleAfterFullscreen(Context context) {
         super(context);

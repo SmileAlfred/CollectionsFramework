@@ -1,8 +1,6 @@
 package com.example.collectionsframework.c3json.bean;
 
-/**
- * Created by Administrator on 2016/8/27 0027.
- */
+
 // 商店的实体类
 public class ShopInfo {
     private int id;

@@ -1,8 +1,5 @@
 package com.example.collectionsframework.c9imageloader;
 
-/**
- * Created by Administrator on 2016/10/14.
- */
 public class Constants {
     public static final String[] IMAGES = new String[]{
             // Heavy images

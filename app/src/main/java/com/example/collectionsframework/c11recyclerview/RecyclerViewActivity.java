@@ -17,9 +17,6 @@ import com.example.collectionsframework.R;
 
 import java.util.ArrayList;
 
-/**
- * 作用：RecyclerViewActivity
- */
 public class RecyclerViewActivity extends Activity implements View.OnClickListener {
 
     private Button btn_add;

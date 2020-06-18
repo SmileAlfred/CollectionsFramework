@@ -15,10 +15,6 @@ import com.nostra13.universalimageloader.core.display.RoundedBitmapDisplayer;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
-
-/**
- * Created by Administrator on 2016/10/14.
- */
 public class ImageloaderListviewAdapter extends BaseAdapter {
     private Context mContext;
     private final ImageLoader imageLoader;

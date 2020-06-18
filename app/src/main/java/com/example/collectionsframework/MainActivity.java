@@ -16,12 +16,6 @@ import com.example.collectionsframework.c1fragment.ThirdPartyFragment;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * @author：尚硅谷-杨光福 on 2016/7/21 18:42
- * 微信：yangguangfu520
- * QQ号：541433511
- * 作用：主页面
- */
 public class   MainActivity extends FragmentActivity {
 
     private RadioGroup mRg_main;

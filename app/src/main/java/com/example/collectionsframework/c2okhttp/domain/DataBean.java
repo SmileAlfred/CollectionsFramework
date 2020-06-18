@@ -2,12 +2,6 @@ package com.example.collectionsframework.c2okhttp.domain;
 
 import java.util.List;
 
-/**
- * 作者：尚硅谷-杨光福 on 27/07/2016 16:28
- * 微信：yangguangfu520
- * QQ号：541433511
- * 作用：xxxx
- */
 public class DataBean {
 
 

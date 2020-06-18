@@ -14,10 +14,6 @@ import com.squareup.picasso.Picasso;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-
-/**
- * Created by Administrator on 2016/10/15.
- */
 public class PicassoListviewAdapter extends BaseAdapter {
 
     private Context mContext;

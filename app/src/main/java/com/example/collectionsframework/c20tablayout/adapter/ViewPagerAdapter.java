@@ -9,12 +9,6 @@ import com.example.collectionsframework.c20tablayout.fragment.MyFragment;
 
 import java.util.ArrayList;
 
-/**
- * 作者：尚硅谷-杨光福 on 2016/12/25 17:10
- * 微信：yangguangfu520
- * QQ号：541433511
- * 作用：xxxx
- */
 public class ViewPagerAdapter extends FragmentPagerAdapter {
     private final ArrayList<MyFragment> fragments;
 

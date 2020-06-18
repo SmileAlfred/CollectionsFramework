@@ -18,10 +18,6 @@ import fm.jiecao.jcvideoplayer_lib.JCUtils;
 import fm.jiecao.jcvideoplayer_lib.JCVideoPlayer;
 import fm.jiecao.jcvideoplayer_lib.JCVideoPlayerStandard;
 
-/**
- * Created by Nathen on 16/10/13.
- */
-
 public class WebViewActivity extends AppCompatActivity {
     WebView mWebView;
     TextView tvTitle;

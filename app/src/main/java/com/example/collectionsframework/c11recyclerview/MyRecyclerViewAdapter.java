@@ -13,9 +13,6 @@ import com.example.collectionsframework.R;
 
 import java.util.ArrayList;
 
-/**
- * 作用：RecyclerView的适配器
- */
 public class MyRecyclerViewAdapter extends RecyclerView.Adapter<MyRecyclerViewAdapter.ViewHolder> {
 
 

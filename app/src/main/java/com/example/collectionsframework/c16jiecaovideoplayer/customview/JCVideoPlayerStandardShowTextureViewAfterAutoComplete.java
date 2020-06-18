@@ -6,10 +6,6 @@ import android.view.View;
 
 import fm.jiecao.jcvideoplayer_lib.JCVideoPlayerStandard;
 
-/**
- * Created by Nathen on 2016/11/6.
- */
-
 public class JCVideoPlayerStandardShowTextureViewAfterAutoComplete extends JCVideoPlayerStandard {
     public JCVideoPlayerStandardShowTextureViewAfterAutoComplete(Context context) {
         super(context);

@@ -1,7 +1,5 @@
 package com.example.collectionsframework.c16jiecaovideoplayer.utils;
 
-/**
- */
 public class VideoConstant {
 
     public static String[][] videoUrls = {

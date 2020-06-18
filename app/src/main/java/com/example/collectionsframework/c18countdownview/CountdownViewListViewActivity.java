@@ -23,8 +23,8 @@ import java.util.TimerTask;
 import cn.iwgang.countdownview.CountdownView;
 
 
-/*
-     此类模拟在ListView中使用倒计时
+/**
+ * 此类模拟在ListView中使用倒计时
  */
 public class CountdownViewListViewActivity extends AppCompatActivity {
     private List<ItemInfo> mDataList;
@@ -224,6 +224,7 @@ public class CountdownViewListViewActivity extends AppCompatActivity {
 
             /**
              * 更新时间
+             *
              * @param curTimeMillis
              */
             public void refreshTime(long curTimeMillis) {

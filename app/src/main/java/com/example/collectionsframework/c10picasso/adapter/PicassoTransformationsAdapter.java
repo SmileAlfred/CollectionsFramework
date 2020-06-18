@@ -36,9 +36,6 @@ import jp.wasabeef.picasso.transformations.gpu.SwirlFilterTransformation;
 import jp.wasabeef.picasso.transformations.gpu.ToonFilterTransformation;
 import jp.wasabeef.picasso.transformations.gpu.VignetteFilterTransformation;
 
-/**
- * Created by Administrator on 2016/10/15.
- */
 public class PicassoTransformationsAdapter extends BaseAdapter {
     private Context mContext;
     private List<String> mData;

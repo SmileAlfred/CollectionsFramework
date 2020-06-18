@@ -9,9 +9,6 @@ import android.widget.TextView;
 import com.example.collectionsframework.c2okhttp.base.BaseFragment;
 
 /**
- * 作者：尚硅谷-杨光福 on 2016/7/21 19:27
- * 微信：yangguangfu520
- * QQ号：541433511
  * 作用：自定义Fragment
  */
 public class CustomFragment extends BaseFragment {

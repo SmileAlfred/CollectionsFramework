@@ -17,9 +17,6 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-/**
- * 作用：代表整个软件
- */
 public class MyApplication extends Application {
     public static List<?> images = new ArrayList<>();
     public static List<String> titles = new ArrayList<>();

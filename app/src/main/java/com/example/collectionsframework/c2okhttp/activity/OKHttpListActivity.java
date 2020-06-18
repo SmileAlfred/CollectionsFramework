@@ -28,9 +28,6 @@ import okhttp3.Call;
 import okhttp3.Request;
 
 /**
- * 作者：尚硅谷-杨光福 on 27/07/2016 16:21
- * 微信：yangguangfu520
- * QQ号：541433511
  * 作用：列表中请求图片
  */
 public class OKHttpListActivity  extends Activity{

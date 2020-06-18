@@ -15,9 +15,6 @@ import com.nostra13.universalimageloader.core.ImageLoader;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-/**
- * Created by Administrator on 2016/10/14.
- */
 public class ImageloaderGridviewAdapter extends BaseAdapter {
     private Context mContext;
     private final ImageLoader imageLoader;

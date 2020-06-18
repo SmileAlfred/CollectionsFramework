@@ -18,10 +18,6 @@ import com.example.collectionsframework.c10picasso.Constants;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-/**
- * Created by Administrator on 2016/10/28.
- */
-
 public class GlideRecyclerviewAdapter extends RecyclerView.Adapter<GlideRecyclerviewAdapter.ViewHolder> {
     private Context mContext;
     /**

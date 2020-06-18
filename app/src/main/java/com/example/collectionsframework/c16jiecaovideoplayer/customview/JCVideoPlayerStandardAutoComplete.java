@@ -5,10 +5,6 @@ import android.util.AttributeSet;
 
 import fm.jiecao.jcvideoplayer_lib.JCVideoPlayerStandard;
 
-/**
- * Created by Nathen on 2016/11/26.
- */
-
 public class JCVideoPlayerStandardAutoComplete extends JCVideoPlayerStandard {
     public JCVideoPlayerStandardAutoComplete(Context context) {
         super(context);

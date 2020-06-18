@@ -23,8 +23,8 @@ import java.util.TimerTask;
 import cn.iwgang.countdownview.CountdownView;
 
 
-/*
-     此类模拟在RecyclerView中使用倒计时
+/**
+ * 此类模拟在RecyclerView中使用倒计时
  */
 public class CountdownViewRecyclerViewActivity extends AppCompatActivity {
     private MyAdapter mMyAdapter;
@@ -40,10 +40,10 @@ public class CountdownViewRecyclerViewActivity extends AppCompatActivity {
         RecyclerView cvFamiliarRecyclerView = (RecyclerView) findViewById(R.id.cv_familiarRecyclerView);
         cvFamiliarRecyclerView.setAdapter(mMyAdapter = new MyAdapter(this, mDataList));
         //设置布局管理器
-        cvFamiliarRecyclerView.setLayoutManager(new LinearLayoutManager(this,LinearLayoutManager.VERTICAL,false));
+        cvFamiliarRecyclerView.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false));
         //添加分割线
         //网络地址http://blog.csdn.net/lmj623565791/article/details/45059587
-        cvFamiliarRecyclerView.addItemDecoration(new DividerItemDecoration(this,DividerItemDecoration.VERTICAL_LIST));
+        cvFamiliarRecyclerView.addItemDecoration(new DividerItemDecoration(this, DividerItemDecoration.VERTICAL_LIST));
     }
 
     private void initData() {
