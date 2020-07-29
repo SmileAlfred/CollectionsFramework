@@ -5,6 +5,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 
+import androidx.annotation.Keep;
+
 public class LauncherActivity extends Activity {
 
     @Override
@@ -24,10 +26,9 @@ public class LauncherActivity extends Activity {
      * 启动主页面
      */
     private void startMainActivity() {
-        Intent intent = new Intent(this,MainActivity.class);
+        Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
         //关闭当前页面
         finish();
-
     }
 }

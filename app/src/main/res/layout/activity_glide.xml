@@ -29,4 +29,9 @@
         android:id="@+id/bt_glide_tranfromations"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
+    <ImageView
+        android:id="@+id/iv_test_tomcat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
 </LinearLayout>
