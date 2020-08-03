@@ -18,6 +18,9 @@ import com.example.collectionsframework.c1fragment.ThirdPartyFragment;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * @author liusaisai
+ */
 public class   MainActivity extends FragmentActivity {
 
     private RadioGroup mRg_main;

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".C21iptransfer.IPTranferActivity">
+
+    <Button
+        android:id="@+id/btn_transfer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="50dp"
+        android:background="#F0F0F0"
+        android:text="开始传输" />
+
+    <TextView
+        android:id="@+id/tv_result_iptrans"
+        android:layout_width="match_parent"
+        android:background="#fff"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="显示请求数据" />
+    <ImageView
+        android:id="@+id/iv1_take_photo_ip"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"/>
+    <View android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_margin="3dp"
+        android:background="#F0F0F0"/>
+    <ImageView
+        android:id="@+id/iv2_take_photo_ip"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"/>
+</LinearLayout>

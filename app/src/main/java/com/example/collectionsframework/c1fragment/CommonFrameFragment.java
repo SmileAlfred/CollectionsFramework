@@ -6,6 +6,7 @@ import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.collectionsframework.C21iptransfer.IPTranferActivity;
 import com.example.collectionsframework.R;
 import com.example.collectionsframework.c10picasso.activity.PicassoActivity;
 import com.example.collectionsframework.c11recyclerview.RecyclerViewActivity;
@@ -18,6 +19,7 @@ import com.example.collectionsframework.c17banner.activity.BannerMainActivity;
 import com.example.collectionsframework.c18countdownview.CountdownViewMainActivity;
 import com.example.collectionsframework.c19opendanmaku.activity.OpenDanmakuMainActivity;
 import com.example.collectionsframework.c20tablayout.activity.TabLayoutMainActivity;
+import com.example.collectionsframework.c22a2atrsnfer.A2ATransferActivity;
 import com.example.collectionsframework.c2okhttp.activity.OKHttpActivity;
 import com.example.collectionsframework.c2okhttp.base.BaseFragment;
 import com.example.collectionsframework.c3json.activity.FastJsonActivity;
@@ -128,7 +130,8 @@ public class CommonFrameFragment extends BaseFragment implements View.OnClickLis
         datas = new String[]{"OKHttp", "NativeJsonPrase", "Gson", "FastJson", "xUtils3"
                 , "Afinal", "Volley", "EventBus", "ButterKnife", "ImageLoader", "Picasso"
                 , "RecyclerView", "Glide", "Fresco", "PullToRefresh", "UniversalVideoView"
-                , "JCVideoPlayer", "Banner", "CountdownView", "OpenDanmaku", "TabLayout", "更多"};
+                , "JCVideoPlayer", "Banner", "CountdownView", "OpenDanmaku", "TabLayout"
+                ,"文件传输","A2A传输","更多"};
         mTextViews.add(item1);
         mTextViews.add(item2);
         mTextViews.add(item3);
@@ -249,6 +252,12 @@ public class CommonFrameFragment extends BaseFragment implements View.OnClickLis
                 break;
             case "tablayout":
                 intent = new Intent(mContext, TabLayoutMainActivity.class);
+                break;
+            case "文件传输":
+                intent = new Intent(mContext, IPTranferActivity.class);
+                break;
+            case "a2a传输":
+                intent = new Intent(mContext, A2ATransferActivity.class);
                 break;
             default:
                 break;

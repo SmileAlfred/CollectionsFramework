@@ -19,7 +19,7 @@ public class LauncherActivity extends Activity {
                 //在主线程中执行
                 startMainActivity();
             }
-        }, 1000);
+        }, 0);
     }
 
     /**

@@ -290,6 +290,11 @@ public class OKHttpActivity extends Activity implements View.OnClickListener {
                 case 101:
                     Toast.makeText(OKHttpActivity.this, "https", Toast.LENGTH_SHORT).show();
                     break;
+                default:
+
+                    Toast.makeText(OKHttpActivity.this, "id：" + id, Toast.LENGTH_SHORT).show();
+                    break;
+
             }
         }
 
@@ -338,9 +343,10 @@ public class OKHttpActivity extends Activity implements View.OnClickListener {
      * 使用okhttp-utils上传多个或者单个文件；
      * 长传文件报错：一是报没有权限实际已经给了；二是报无法运行，解释是模拟器版本高，实际上并不高。
      * 上传到文件，最终在：安装目录 "/webapps/FileUpload/upload"下；
-     */
+     */ 
     public void multiFileUpload() {
-        String mBaseUrl = "http://192.168.0.4:8080/FileUpload/FileUploadServlet";
+        //String mBaseUrl = "http://192.168.137.1:8080/FileUpload/FileUploadServlet";
+        String mBaseUrl = "http://192.168.0.8:8080/FileUpload/FileUploadServlet";
         File file = new File(getFilesDir(), "afu.png");
         File file2 = new File(getFilesDir(), "test.txt");
         if (!file.exists() || !file2.exists()) {
@@ -353,8 +359,8 @@ public class OKHttpActivity extends Activity implements View.OnClickListener {
 
         String url = mBaseUrl;
         OkHttpUtils.post()
-                .addFile("mFile", "server_afu.png", file)
-                .addFile("mFile", "server_test.txt", file2)
+                .addFile("mFile", "today_afu.png", file)
+                .addFile("mFile", "today_test.txt", file2)
                 .url(url)
                 .params(params)
                 .build()

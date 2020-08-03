@@ -8,7 +8,7 @@ android {
 
     defaultConfig {
         applicationId "com.example.collectionsframework"
-        minSdkVersion 14
+        minSdkVersion 15
         targetSdkVersion 29
         versionCode 1
         versionName "1.0"
@@ -81,6 +81,10 @@ dependencies {
     //当软件崩溃时，会将其回复、重启并可以记录错误日志；
     //implementation 'com.zxy.android:recovery:0.0.8'
     implementation 'cn.qqtheme.framework:ColorPicker:1.1.3'
+
+    implementation 'com.github.lp0int:TcpSocketLib:1.0'
+    //使用指南：https://github.com/spacecowboy/NoNonsense-FilePicker
+    implementation 'com.nononsenseapps:filepicker:4.1.0'
 }
 repositories {
     jcenter()
